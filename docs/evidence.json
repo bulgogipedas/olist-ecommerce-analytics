@@ -1,0 +1,933 @@
+{
+  "categories": [
+    {
+      "delivered_items": 9422,
+      "merchandise_value_brl": 1229557.5,
+      "product_category": "health_beauty",
+      "sales_share": 0.09328237381452077
+    },
+    {
+      "delivered_items": 5855,
+      "merchandise_value_brl": 1163465.91,
+      "product_category": "watches_gifts",
+      "sales_share": 0.08826822815286929
+    },
+    {
+      "delivered_items": 10945,
+      "merchandise_value_brl": 1022955.77,
+      "product_category": "bed_bath_table",
+      "sales_share": 0.07760819850463353
+    },
+    {
+      "delivered_items": 8414,
+      "merchandise_value_brl": 952840.4,
+      "product_category": "sports_leisure",
+      "sales_share": 0.07228878224757891
+    },
+    {
+      "delivered_items": 7632,
+      "merchandise_value_brl": 888055.59,
+      "product_category": "computers_accessories",
+      "sales_share": 0.06737377756994267
+    },
+    {
+      "delivered_items": 8095,
+      "merchandise_value_brl": 706237.17,
+      "product_category": "furniture_decor",
+      "sales_share": 0.053579828266387915
+    },
+    {
+      "delivered_items": 6783,
+      "merchandise_value_brl": 614341.62,
+      "product_category": "housewares",
+      "sales_share": 0.04660802333087983
+    },
+    {
+      "delivered_items": 3711,
+      "merchandise_value_brl": 609158.0,
+      "product_category": "cool_stuff",
+      "sales_share": 0.04621475959286642
+    },
+    {
+      "delivered_items": 4132,
+      "merchandise_value_brl": 577838.39,
+      "product_category": "auto",
+      "sales_share": 0.04383864658656537
+    },
+    {
+      "delivered_items": 4263,
+      "merchandise_value_brl": 469135.4,
+      "product_category": "garden_tools",
+      "sales_share": 0.03559171795741536
+    },
+    {
+      "delivered_items": 4006,
+      "merchandise_value_brl": 467179.98,
+      "product_category": "toys",
+      "sales_share": 0.03544336684784594
+    },
+    {
+      "delivered_items": 2971,
+      "merchandise_value_brl": 399050.67,
+      "product_category": "baby",
+      "sales_share": 0.030274626253652202
+    },
+    {
+      "delivered_items": 3311,
+      "merchandise_value_brl": 385315.55,
+      "product_category": "perfumery",
+      "sales_share": 0.02923258909945055
+    },
+    {
+      "delivered_items": 4422,
+      "merchandise_value_brl": 309631.94,
+      "product_category": "telephony",
+      "sales_share": 0.02349072928431185
+    },
+    {
+      "delivered_items": 1662,
+      "merchandise_value_brl": 266853.43,
+      "product_category": "office_furniture",
+      "sales_share": 0.02024526824564695
+    },
+    {
+      "delivered_items": 2466,
+      "merchandise_value_brl": 223788.69,
+      "product_category": "stationery",
+      "sales_share": 0.01697809190382874
+    },
+    {
+      "delivered_items": 199,
+      "merchandise_value_brl": 218684.14,
+      "product_category": "computers",
+      "sales_share": 0.016590826939599814
+    },
+    {
+      "delivered_items": 1920,
+      "merchandise_value_brl": 211005.96,
+      "product_category": "pet_shop",
+      "sales_share": 0.016008309361548213
+    },
+    {
+      "delivered_items": 651,
+      "merchandise_value_brl": 184315.74,
+      "product_category": "musical_instruments",
+      "sales_share": 0.013983412535469076
+    },
+    {
+      "delivered_items": 658,
+      "merchandise_value_brl": 182754.12,
+      "product_category": "small_appliances",
+      "sales_share": 0.013864937701558314
+    },
+    {
+      "delivered_items": 1557,
+      "merchandise_value_brl": 175901.32,
+      "product_category": "Unknown",
+      "sales_share": 0.013345038915795023
+    },
+    {
+      "delivered_items": 2728,
+      "merchandise_value_brl": 154935.94,
+      "product_category": "electronics",
+      "sales_share": 0.011754466360771385
+    },
+    {
+      "delivered_items": 1976,
+      "merchandise_value_brl": 148945.19,
+      "product_category": "fashion_bags_accessories",
+      "sales_share": 0.01129996839631723
+    },
+    {
+      "delivered_items": 1082,
+      "merchandise_value_brl": 144384.01,
+      "product_category": "consoles_games",
+      "sales_share": 0.010953927078367223
+    },
+    {
+      "delivered_items": 916,
+      "merchandise_value_brl": 142108.49,
+      "product_category": "construction_tools_construction",
+      "sales_share": 0.010781291063164665
+    },
+    {
+      "delivered_items": 1077,
+      "merchandise_value_brl": 138701.63,
+      "product_category": "luggage_accessories",
+      "sales_share": 0.010522824104072685
+    },
+    {
+      "delivered_items": 231,
+      "merchandise_value_brl": 107953.95,
+      "product_category": "home_appliances_2",
+      "sales_share": 0.008190101494768716
+    },
+    {
+      "delivered_items": 596,
+      "merchandise_value_brl": 81407.57,
+      "product_category": "home_construction",
+      "sales_share": 0.006176117323567029
+    },
+    {
+      "delivered_items": 754,
+      "merchandise_value_brl": 78832.48,
+      "product_category": "home_appliances",
+      "sales_share": 0.005980753944476555
+    },
+    {
+      "delivered_items": 206,
+      "merchandise_value_brl": 70566.1,
+      "product_category": "agro_industry_and_commerce",
+      "sales_share": 0.005353611619491447
+    },
+    {
+      "delivered_items": 495,
+      "merchandise_value_brl": 67350.7,
+      "product_category": "furniture_living_room",
+      "sales_share": 0.005109670083806283
+    },
+    {
+      "delivered_items": 429,
+      "merchandise_value_brl": 58008.45,
+      "product_category": "home_confort",
+      "sales_share": 0.004400905136442124
+    },
+    {
+      "delivered_items": 250,
+      "merchandise_value_brl": 54610.33,
+      "product_category": "fixed_telephony",
+      "sales_share": 0.004143101251624539
+    },
+    {
+      "delivered_items": 281,
+      "merchandise_value_brl": 51974.27,
+      "product_category": "air_conditioning",
+      "sales_share": 0.003943112284603878
+    },
+    {
+      "delivered_items": 360,
+      "merchandise_value_brl": 50413.61,
+      "product_category": "audio",
+      "sales_share": 0.0038247102826500286
+    },
+    {
+      "delivered_items": 73,
+      "merchandise_value_brl": 46589.56,
+      "product_category": "small_appliances_home_oven_and_coffee",
+      "sales_share": 0.003534592527615865
+    },
+    {
+      "delivered_items": 274,
+      "merchandise_value_brl": 45531.98,
+      "product_category": "kitchen_dining_laundry_garden_furniture",
+      "sales_share": 0.0034543575057492506
+    },
+    {
+      "delivered_items": 537,
+      "merchandise_value_brl": 45302.15,
+      "product_category": "books_general_interest",
+      "sales_share": 0.00343692108006457
+    },
+    {
+      "delivered_items": 301,
+      "merchandise_value_brl": 39957.0,
+      "product_category": "construction_tools_lights",
+      "sales_share": 0.0030314026066343433
+    },
+    {
+      "delivered_items": 183,
+      "merchandise_value_brl": 38773.22,
+      "product_category": "construction_tools_safety",
+      "sales_share": 0.0029415932170985524
+    },
+    {
+      "delivered_items": 261,
+      "merchandise_value_brl": 38139.21,
+      "product_category": "industry_commerce_and_business",
+      "sales_share": 0.002893493020221103
+    },
+    {
+      "delivered_items": 498,
+      "merchandise_value_brl": 28651.25,
+      "product_category": "food",
+      "sales_share": 0.0021736735473967574
+    },
+    {
+      "delivered_items": 294,
+      "merchandise_value_brl": 26880.48,
+      "product_category": "market_place",
+      "sales_share": 0.0020393312095398136
+    },
+    {
+      "delivered_items": 232,
+      "merchandise_value_brl": 25096.28,
+      "product_category": "costruction_tools_garden",
+      "sales_share": 0.0019039699829523072
+    },
+    {
+      "delivered_items": 197,
+      "merchandise_value_brl": 23657.3,
+      "product_category": "art",
+      "sales_share": 0.0017947994315371688
+    },
+    {
+      "delivered_items": 256,
+      "merchandise_value_brl": 22971.47,
+      "product_category": "fashion_shoes",
+      "sales_share": 0.0017427678263188583
+    },
+    {
+      "delivered_items": 361,
+      "merchandise_value_brl": 21529.84,
+      "product_category": "drinks",
+      "sales_share": 0.0016333962283559915
+    },
+    {
+      "delivered_items": 197,
+      "merchandise_value_brl": 21315.05,
+      "product_category": "signaling_and_security",
+      "sales_share": 0.0016171008366629466
+    },
+    {
+      "delivered_items": 103,
+      "merchandise_value_brl": 19051.8,
+      "product_category": "furniture_bedroom",
+      "sales_share": 0.0014453957049096824
+    },
+    {
+      "delivered_items": 263,
+      "merchandise_value_brl": 18702.23,
+      "product_category": "books_technical",
+      "sales_share": 0.0014188750099325528
+    },
+    {
+      "delivered_items": 103,
+      "merchandise_value_brl": 15903.95,
+      "product_category": "costruction_tools_tools",
+      "sales_share": 0.0012065789595260472
+    },
+    {
+      "delivered_items": 269,
+      "merchandise_value_brl": 14942.88,
+      "product_category": "food_drink",
+      "sales_share": 0.0011336658253278322
+    },
+    {
+      "delivered_items": 124,
+      "merchandise_value_brl": 10427.43,
+      "product_category": "fashion_male_clothing",
+      "sales_share": 0.0007910938879920202
+    },
+    {
+      "delivered_items": 127,
+      "merchandise_value_brl": 9305.95,
+      "product_category": "fashion_underwear_beach",
+      "sales_share": 0.0007060109889933896
+    },
+    {
+      "delivered_items": 150,
+      "merchandise_value_brl": 8737.84,
+      "product_category": "christmas_supplies",
+      "sales_share": 0.0006629104024915241
+    },
+    {
+      "delivered_items": 83,
+      "merchandise_value_brl": 7528.41,
+      "product_category": "tablets_printing_image",
+      "sales_share": 0.0005711550341069664
+    },
+    {
+      "delivered_items": 70,
+      "merchandise_value_brl": 6674.47,
+      "product_category": "cine_photo",
+      "sales_share": 0.0005063694911005012
+    },
+    {
+      "delivered_items": 38,
+      "merchandise_value_brl": 6034.35,
+      "product_category": "music",
+      "sales_share": 0.00045780574916395
+    },
+    {
+      "delivered_items": 61,
+      "merchandise_value_brl": 4542.59,
+      "product_category": "dvds_blu_ray",
+      "sales_share": 0.0003446309574510374
+    },
+    {
+      "delivered_items": 42,
+      "merchandise_value_brl": 4465.19,
+      "product_category": "party_supplies",
+      "sales_share": 0.0003387588809249344
+    },
+    {
+      "delivered_items": 57,
+      "merchandise_value_brl": 4418.86,
+      "product_category": "books_imported",
+      "sales_share": 0.00033524398033766883
+    },
+    {
+      "delivered_items": 37,
+      "merchandise_value_brl": 4323.38,
+      "product_category": "furniture_mattress_and_upholstery",
+      "sales_share": 0.0003280002352897061
+    },
+    {
+      "delivered_items": 44,
+      "merchandise_value_brl": 2580.04,
+      "product_category": "fashio_female_clothing",
+      "sales_share": 0.00019573891886830522
+    },
+    {
+      "delivered_items": 29,
+      "merchandise_value_brl": 2094.52,
+      "product_category": "fashion_sport",
+      "sales_share": 0.0001589041566596032
+    },
+    {
+      "delivered_items": 14,
+      "merchandise_value_brl": 2054.99,
+      "product_category": "la_cuisine",
+      "sales_share": 0.00015590514910047073
+    },
+    {
+      "delivered_items": 24,
+      "merchandise_value_brl": 1814.01,
+      "product_category": "arts_and_craftmanship",
+      "sales_share": 0.00013762281058289573
+    },
+    {
+      "delivered_items": 36,
+      "merchandise_value_brl": 1365.89,
+      "product_category": "diapers_and_hygiene",
+      "sales_share": 0.00010362546002892568
+    },
+    {
+      "delivered_items": 33,
+      "merchandise_value_brl": 1110.04,
+      "product_category": "flowers",
+      "sales_share": 8.421498484541848e-05
+    },
+    {
+      "delivered_items": 30,
+      "merchandise_value_brl": 760.27,
+      "product_category": "home_comfort_2",
+      "sales_share": 5.767911654393203e-05
+    },
+    {
+      "delivered_items": 14,
+      "merchandise_value_brl": 730.0,
+      "product_category": "cds_dvds_musicals",
+      "sales_share": 5.538263390252198e-05
+    },
+    {
+      "delivered_items": 7,
+      "merchandise_value_brl": 519.95,
+      "product_category": "fashion_childrens_clothes",
+      "sales_share": 3.944684999673466e-05
+    },
+    {
+      "delivered_items": 2,
+      "merchandise_value_brl": 283.29,
+      "product_category": "security_and_services",
+      "sales_share": 2.149225528526774e-05
+    }
+  ],
+  "experience": [
+    {
+      "delivered_orders": 6531,
+      "delivery_outcome": "Late",
+      "low_rating_share": 0.6240200689871434,
+      "mean_review_score": 2.270931326434619,
+      "rating_1_count": 3430,
+      "rating_2_count": 550,
+      "rating_3_count": 694,
+      "rating_4_count": 648,
+      "rating_5_count": 1056,
+      "reviewed_orders": 6378
+    },
+    {
+      "delivered_orders": 89672,
+      "delivery_outcome": "On time",
+      "low_rating_share": 0.09248503061155838,
+      "mean_review_score": 4.291045278195152,
+      "rating_1_count": 5885,
+      "rating_2_count": 2363,
+      "rating_3_count": 7201,
+      "rating_4_count": 18195,
+      "rating_5_count": 55538,
+      "reviewed_orders": 89182
+    },
+    {
+      "delivered_orders": 8,
+      "delivery_outcome": "Unknown",
+      "low_rating_share": 0.125,
+      "mean_review_score": 4.5,
+      "rating_1_count": 1,
+      "rating_2_count": 0,
+      "rating_3_count": 0,
+      "rating_4_count": 0,
+      "rating_5_count": 7,
+      "reviewed_orders": 8
+    }
+  ],
+  "headline": {
+    "aov_brl": 137.00124860982632,
+    "delivered_orders": 96211,
+    "eligible_delivery_orders": 96203,
+    "freight_brl": 2192092.88,
+    "late_orders": 6531,
+    "mean_delivery_days": 12.538460850026361,
+    "merchandise_value_brl": 13181027.13,
+    "on_time_orders": 89672,
+    "on_time_rate": 0.932112304190098,
+    "paid_delivered_orders": 96211,
+    "payment_value_brl": 15375875.44,
+    "placed_orders": 99092,
+    "review_coverage": 0.9933167725104198,
+    "review_score": 4.156244768123221,
+    "review_score_sum": 397204,
+    "reviewed_orders": 95568
+  },
+  "monthly": [
+    {
+      "delivered_orders": 750,
+      "merchandise_value_brl": 111798.36,
+      "month": "2017-01-01",
+      "on_time_rate": 0.9706666666666667,
+      "review_score": 4.198380566801619
+    },
+    {
+      "delivered_orders": 1653,
+      "merchandise_value_brl": 234223.4,
+      "month": "2017-02-01",
+      "on_time_rate": 0.970356926799758,
+      "review_score": 4.203286670724284
+    },
+    {
+      "delivered_orders": 2546,
+      "merchandise_value_brl": 359198.85,
+      "month": "2017-03-01",
+      "on_time_rate": 0.9544383346425765,
+      "review_score": 4.186782746339533
+    },
+    {
+      "delivered_orders": 2303,
+      "merchandise_value_brl": 340669.68,
+      "month": "2017-04-01",
+      "on_time_rate": 0.934433347807208,
+      "review_score": 4.1366812227074234
+    },
+    {
+      "delivered_orders": 3546,
+      "merchandise_value_brl": 489338.25,
+      "month": "2017-05-01",
+      "on_time_rate": 0.970098730606488,
+      "review_score": 4.23564525298465
+    },
+    {
+      "delivered_orders": 3135,
+      "merchandise_value_brl": 421923.37,
+      "month": "2017-06-01",
+      "on_time_rate": 0.9696969696969697,
+      "review_score": 4.222757955641273
+    },
+    {
+      "delivered_orders": 3872,
+      "merchandise_value_brl": 481604.52,
+      "month": "2017-07-01",
+      "on_time_rate": 0.9721074380165289,
+      "review_score": 4.257938573659552
+    },
+    {
+      "delivered_orders": 4193,
+      "merchandise_value_brl": 554699.7,
+      "month": "2017-08-01",
+      "on_time_rate": 0.9709038874314333,
+      "review_score": 4.313085234093638
+    },
+    {
+      "delivered_orders": 4150,
+      "merchandise_value_brl": 607399.67,
+      "month": "2017-09-01",
+      "on_time_rate": 0.9561445783132531,
+      "review_score": 4.267605633802817
+    },
+    {
+      "delivered_orders": 4478,
+      "merchandise_value_brl": 648247.65,
+      "month": "2017-10-01",
+      "on_time_rate": 0.9582402858418937,
+      "review_score": 4.204903283850652
+    },
+    {
+      "delivered_orders": 7289,
+      "merchandise_value_brl": 987765.37,
+      "month": "2017-11-01",
+      "on_time_rate": 0.8759604829857299,
+      "review_score": 3.9888090632771482
+    },
+    {
+      "delivered_orders": 5513,
+      "merchandise_value_brl": 726033.19,
+      "month": "2017-12-01",
+      "on_time_rate": 0.9254489388717576,
+      "review_score": 4.088445339681377
+    },
+    {
+      "delivered_orders": 7069,
+      "merchandise_value_brl": 924645.0,
+      "month": "2018-01-01",
+      "on_time_rate": 0.9429905219974537,
+      "review_score": 4.108512762013404
+    },
+    {
+      "delivered_orders": 6555,
+      "merchandise_value_brl": 826437.13,
+      "month": "2018-02-01",
+      "on_time_rate": 0.8587337909992372,
+      "review_score": 3.880590133702167
+    },
+    {
+      "delivered_orders": 7003,
+      "merchandise_value_brl": 953356.25,
+      "month": "2018-03-01",
+      "on_time_rate": 0.8103669855776096,
+      "review_score": 3.8124640184225678
+    },
+    {
+      "delivered_orders": 6798,
+      "merchandise_value_brl": 973534.09,
+      "month": "2018-04-01",
+      "on_time_rate": 0.9549867608120035,
+      "review_score": 4.205864928909953
+    },
+    {
+      "delivered_orders": 6749,
+      "merchandise_value_brl": 977544.69,
+      "month": "2018-05-01",
+      "on_time_rate": 0.9343606460216328,
+      "review_score": 4.236387979767926
+    },
+    {
+      "delivered_orders": 6099,
+      "merchandise_value_brl": 856077.86,
+      "month": "2018-06-01",
+      "on_time_rate": 0.9883530183727034,
+      "review_score": 4.306995884773663
+    },
+    {
+      "delivered_orders": 6159,
+      "merchandise_value_brl": 867953.46,
+      "month": "2018-07-01",
+      "on_time_rate": 0.9662118258609487,
+      "review_score": 4.317758536186898
+    },
+    {
+      "delivered_orders": 6351,
+      "merchandise_value_brl": 838576.64,
+      "month": "2018-08-01",
+      "on_time_rate": 0.9381199811053378,
+      "review_score": 4.310268562401264
+    }
+  ],
+  "states": [
+    {
+      "customer_state": "SP",
+      "delivered_orders": 40406,
+      "eligible_orders": 40399,
+      "late_orders": 1817,
+      "mean_delivery_days": 8.737594713221721,
+      "merchandise_value_brl": 5055587.13,
+      "on_time_rate": 0.95502363919899,
+      "review_score": 4.246552839862612,
+      "reviewed_orders": 40178
+    },
+    {
+      "customer_state": "RJ",
+      "delivered_orders": 12310,
+      "eligible_orders": 12310,
+      "late_orders": 1495,
+      "mean_delivery_days": 15.296848779221952,
+      "merchandise_value_brl": 1751433.85,
+      "on_time_rate": 0.8785540211210398,
+      "review_score": 3.965494577719356,
+      "reviewed_orders": 12172
+    },
+    {
+      "customer_state": "MG",
+      "delivered_orders": 11319,
+      "eligible_orders": 11319,
+      "late_orders": 519,
+      "mean_delivery_days": 11.98452910318769,
+      "merchandise_value_brl": 1548206.88,
+      "on_time_rate": 0.9541478929234031,
+      "review_score": 4.193582792640655,
+      "reviewed_orders": 11251
+    },
+    {
+      "customer_state": "RS",
+      "delivered_orders": 5328,
+      "eligible_orders": 5327,
+      "late_orders": 325,
+      "mean_delivery_days": 15.28867249911355,
+      "merchandise_value_brl": 726373.92,
+      "on_time_rate": 0.9389900506851887,
+      "review_score": 4.185310734463277,
+      "reviewed_orders": 5310
+    },
+    {
+      "customer_state": "PR",
+      "delivered_orders": 4903,
+      "eligible_orders": 4903,
+      "late_orders": 199,
+      "mean_delivery_days": 11.97314922694723,
+      "merchandise_value_brl": 664048.0,
+      "on_time_rate": 0.95941260452784,
+      "review_score": 4.240983606557377,
+      "reviewed_orders": 4880
+    },
+    {
+      "customer_state": "SC",
+      "delivered_orders": 3537,
+      "eligible_orders": 3537,
+      "late_orders": 291,
+      "mean_delivery_days": 14.946139979214449,
+      "merchandise_value_brl": 504774.07,
+      "on_time_rate": 0.917726887192536,
+      "review_score": 4.134188034188035,
+      "reviewed_orders": 3510
+    },
+    {
+      "customer_state": "BA",
+      "delivered_orders": 3253,
+      "eligible_orders": 3253,
+      "late_orders": 396,
+      "mean_delivery_days": 19.33413364159579,
+      "merchandise_value_brl": 493339.26,
+      "on_time_rate": 0.8782662158007992,
+      "review_score": 3.9293242405455673,
+      "reviewed_orders": 3226
+    },
+    {
+      "customer_state": "DF",
+      "delivered_orders": 2074,
+      "eligible_orders": 2074,
+      "late_orders": 118,
+      "mean_delivery_days": 12.938571734704807,
+      "merchandise_value_brl": 295454.64,
+      "on_time_rate": 0.9431051108968177,
+      "review_score": 4.134205426356589,
+      "reviewed_orders": 2064
+    },
+    {
+      "customer_state": "GO",
+      "delivered_orders": 1950,
+      "eligible_orders": 1950,
+      "late_orders": 128,
+      "mean_delivery_days": 15.611612434710338,
+      "merchandise_value_brl": 281932.21,
+      "on_time_rate": 0.9343589743589743,
+      "review_score": 4.101598762248582,
+      "reviewed_orders": 1939
+    },
+    {
+      "customer_state": "ES",
+      "delivered_orders": 1992,
+      "eligible_orders": 1992,
+      "late_orders": 214,
+      "mean_delivery_days": 15.775735616075416,
+      "merchandise_value_brl": 267783.66,
+      "on_time_rate": 0.892570281124498,
+      "review_score": 4.078840284842319,
+      "reviewed_orders": 1966
+    },
+    {
+      "customer_state": "PE",
+      "delivered_orders": 1587,
+      "eligible_orders": 1587,
+      "late_orders": 153,
+      "mean_delivery_days": 18.44987662343344,
+      "merchandise_value_brl": 250639.89,
+      "on_time_rate": 0.9035916824196597,
+      "review_score": 4.0820089001907185,
+      "reviewed_orders": 1573
+    },
+    {
+      "customer_state": "CE",
+      "delivered_orders": 1273,
+      "eligible_orders": 1273,
+      "late_orders": 176,
+      "mean_delivery_days": 21.23845844789213,
+      "merchandise_value_brl": 218107.7,
+      "on_time_rate": 0.8617439120188531,
+      "review_score": 3.9400157853196527,
+      "reviewed_orders": 1267
+    },
+    {
+      "customer_state": "PA",
+      "delivered_orders": 942,
+      "eligible_orders": 942,
+      "late_orders": 106,
+      "mean_delivery_days": 23.757092044605645,
+      "merchandise_value_brl": 173382.99,
+      "on_time_rate": 0.8874734607218684,
+      "review_score": 3.9128094725511304,
+      "reviewed_orders": 929
+    },
+    {
+      "customer_state": "MT",
+      "delivered_orders": 885,
+      "eligible_orders": 885,
+      "late_orders": 53,
+      "mean_delivery_days": 18.068220888261138,
+      "merchandise_value_brl": 152143.82,
+      "on_time_rate": 0.9401129943502825,
+      "review_score": 4.144646924829157,
+      "reviewed_orders": 878
+    },
+    {
+      "customer_state": "MA",
+      "delivered_orders": 713,
+      "eligible_orders": 713,
+      "late_orders": 125,
+      "mean_delivery_days": 21.535556513297998,
+      "merchandise_value_brl": 116305.12,
+      "on_time_rate": 0.8246844319775596,
+      "review_score": 3.829337094499295,
+      "reviewed_orders": 709
+    },
+    {
+      "customer_state": "MS",
+      "delivered_orders": 701,
+      "eligible_orders": 701,
+      "late_orders": 68,
+      "mean_delivery_days": 15.618319018465693,
+      "merchandise_value_brl": 115429.97,
+      "on_time_rate": 0.9029957203994294,
+      "review_score": 4.161659513590844,
+      "reviewed_orders": 699
+    },
+    {
+      "customer_state": "PB",
+      "delivered_orders": 516,
+      "eligible_orders": 516,
+      "late_orders": 54,
+      "mean_delivery_days": 20.39325460271318,
+      "merchandise_value_brl": 112536.92,
+      "on_time_rate": 0.8953488372093024,
+      "review_score": 4.074363992172211,
+      "reviewed_orders": 511
+    },
+    {
+      "customer_state": "PI",
+      "delivered_orders": 475,
+      "eligible_orders": 475,
+      "late_orders": 66,
+      "mean_delivery_days": 19.440831554580917,
+      "merchandise_value_brl": 84511.0,
+      "on_time_rate": 0.8610526315789474,
+      "review_score": 3.9936170212765956,
+      "reviewed_orders": 470
+    },
+    {
+      "customer_state": "RN",
+      "delivered_orders": 470,
+      "eligible_orders": 470,
+      "late_orders": 44,
+      "mean_delivery_days": 19.21091440110322,
+      "merchandise_value_brl": 81376.97,
+      "on_time_rate": 0.9063829787234042,
+      "review_score": 4.143468950749464,
+      "reviewed_orders": 467
+    },
+    {
+      "customer_state": "AL",
+      "delivered_orders": 396,
+      "eligible_orders": 396,
+      "late_orders": 85,
+      "mean_delivery_days": 24.52233901515152,
+      "merchandise_value_brl": 78805.73,
+      "on_time_rate": 0.7853535353535354,
+      "review_score": 3.8473282442748094,
+      "reviewed_orders": 393
+    },
+    {
+      "customer_state": "SE",
+      "delivered_orders": 332,
+      "eligible_orders": 332,
+      "late_orders": 51,
+      "mean_delivery_days": 21.438612226684516,
+      "merchandise_value_brl": 56288.74,
+      "on_time_rate": 0.8463855421686747,
+      "review_score": 3.900302114803625,
+      "reviewed_orders": 331
+    },
+    {
+      "customer_state": "TO",
+      "delivered_orders": 274,
+      "eligible_orders": 274,
+      "late_orders": 27,
+      "mean_delivery_days": 17.658062609826978,
+      "merchandise_value_brl": 48402.51,
+      "on_time_rate": 0.9014598540145985,
+      "review_score": 4.153846153846154,
+      "reviewed_orders": 273
+    },
+    {
+      "customer_state": "RO",
+      "delivered_orders": 243,
+      "eligible_orders": 243,
+      "late_orders": 7,
+      "mean_delivery_days": 19.372036513107755,
+      "merchandise_value_brl": 45682.76,
+      "on_time_rate": 0.9711934156378601,
+      "review_score": 4.1652892561983474,
+      "reviewed_orders": 242
+    },
+    {
+      "customer_state": "AM",
+      "delivered_orders": 145,
+      "eligible_orders": 145,
+      "late_orders": 4,
+      "mean_delivery_days": 26.425990900383134,
+      "merchandise_value_brl": 22155.84,
+      "on_time_rate": 0.9724137931034482,
+      "review_score": 4.243055555555555,
+      "reviewed_orders": 144
+    },
+    {
+      "customer_state": "AC",
+      "delivered_orders": 80,
+      "eligible_orders": 80,
+      "late_orders": 3,
+      "mean_delivery_days": 21.03571296296296,
+      "merchandise_value_brl": 15930.97,
+      "on_time_rate": 0.9625,
+      "review_score": 4.0875,
+      "reviewed_orders": 80
+    },
+    {
+      "customer_state": "AP",
+      "delivered_orders": 67,
+      "eligible_orders": 67,
+      "late_orders": 2,
+      "mean_delivery_days": 27.1850677169707,
+      "merchandise_value_brl": 13374.81,
+      "on_time_rate": 0.9701492537313433,
+      "review_score": 4.242424242424242,
+      "reviewed_orders": 66
+    },
+    {
+      "customer_state": "RR",
+      "delivered_orders": 40,
+      "eligible_orders": 40,
+      "late_orders": 5,
+      "mean_delivery_days": 29.907657986111097,
+      "merchandise_value_brl": 7017.77,
+      "on_time_rate": 0.875,
+      "review_score": 3.9,
+      "reviewed_orders": 40
+    }
+  ]
+}

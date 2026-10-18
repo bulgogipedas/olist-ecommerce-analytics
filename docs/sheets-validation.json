@@ -1,0 +1,71 @@
+{
+  "published": "2026-10-18 15:51:17 UTC",
+  "checks": [
+    {
+      "label": "Orders source rows",
+      "expected": 10631,
+      "observed": 10631,
+      "pass": true
+    },
+    {
+      "label": "Category source rows",
+      "expected": 55647,
+      "observed": 55647,
+      "pass": true
+    },
+    {
+      "label": "Experience source rows",
+      "expected": 13000,
+      "observed": 13000,
+      "pass": true
+    },
+    {
+      "label": "Delivered orders control",
+      "expected": 96211,
+      "observed": 96211,
+      "pass": true
+    },
+    {
+      "label": "Merchandise control BRL",
+      "expected": 13181027.13,
+      "observed": 13181027.13000042,
+      "pass": true
+    },
+    {
+      "label": "Category merchandise control BRL",
+      "expected": 13181027.13,
+      "observed": 13181027.130004752,
+      "pass": true
+    },
+    {
+      "label": "Eligible delivery orders control",
+      "expected": 96203,
+      "observed": 96203,
+      "pass": true
+    },
+    {
+      "label": "On-time orders control",
+      "expected": 89672,
+      "observed": 89672,
+      "pass": true
+    },
+    {
+      "label": "Reviewed orders control",
+      "expected": 95568,
+      "observed": 95568,
+      "pass": true
+    },
+    {
+      "label": "Review score total control",
+      "expected": 397204,
+      "observed": 397204,
+      "pass": true
+    },
+    {
+      "label": "Experience delivered orders control",
+      "expected": 96211,
+      "observed": 96211,
+      "pass": true
+    }
+  ]
+}

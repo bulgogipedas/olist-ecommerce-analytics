@@ -1,0 +1,26 @@
+{
+  "built_at": "2026-10-18T15:43:47.700412+00:00",
+  "checks_passed": 23,
+  "input_sha256": {
+    "olist_customers_dataset.csv": "983a422239e1712ded753b3bf9ecf47dc73f144d306029dcfa99e70a226883d2",
+    "olist_order_items_dataset.csv": "0bc4d068c4fe38cbb01bd90e8746e3c613fe7b4baef75fab7b0e329701c3e279",
+    "olist_order_payments_dataset.csv": "4f713964f2815dbbaa40b9488268c55aac3627bfce5aa96cf58d1f3616de3cc0",
+    "olist_order_reviews_dataset.csv": "012b61c7593e34f51fa614efdf802b9c7056ce6aae5307ddb93236e7cfc797d7",
+    "olist_orders_dataset.csv": "8df58ef3d2d7e9944010f7beecd9b75367f5588ec6e3c91cec19ae3345ef9ecf",
+    "olist_products_dataset.csv": "3e6569628a17fbc75fd206ee357b59e20364b9afa90f5b6cd5b4d624c58aa9cc",
+    "product_category_name_translation.csv": "a81f0d1f27b27e7293f761bc79e3ce8f348ee39c4b3ed3e49bde38f478586278"
+  },
+  "mart_rows": {
+    "categories_daily": 55647,
+    "experience_daily": 13000,
+    "orders_daily": 10631
+  },
+  "mart_sha256": {
+    "categories_daily": "fe4f067113d4f720670cd0098b62c1a7477031719c358cec74ce61eaa7b59b8c",
+    "experience_daily": "d1350872603c57ad4d0b1a951aa197b099e3ce42ee45d0f79177ab417efcb55a",
+    "orders_daily": "1607bf16952776c3e1482ed173fd45d439f993ce80d90388ae1190a3381d454d"
+  },
+  "report_end": "2018-08-31",
+  "report_start": "2017-01-01",
+  "source_url": "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce"
+}
