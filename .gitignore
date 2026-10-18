@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.duckdb*
+*.zip
+*.xlsx
+.env
+.DS_Store
+node_modules/
+data/
+build/
+*.pyc
