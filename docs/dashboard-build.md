@@ -2,7 +2,11 @@
 
 ## Current state
 
-The DuckDB analysis, validations, workbook packaging, and private native Google Sheets sources are complete. All source row counts and primary metric totals reconcile. Report construction is not complete: the native report editor returned a blank document after source selection, an authorization refresh, and a clean report attempt. Public access, dashboard interactions, dashboard screenshots, and native PDF export remain unverified.
+The DuckDB analysis, validations, workbook packaging, and private native Google Sheets sources are complete. All source row counts and primary metric totals reconcile. The native editor now works, and all three Google Sheets sources are attached using owner's credentials. Shared purchase-date and customer-state ID overrides are saved across the sources. Report construction remains in progress.
+
+Sales Overview has a saved layout with three scorecards, a monthly merchandise trend, and state/category contribution bars. The unfiltered merchandise value and delivered-order count match the reference totals. The historical date control and customer-state dropdown are report-level components. Delivery Performance has a saved page with its KPI, monthly trend, state-rate comparison, and state-count table under construction. Customer Experience is still pending.
+
+Final validation must correct and verify percentage field types as well as display formats: a fraction of 0.932112 must display as 93.21%, not 0.93%. Other remaining work includes readable category labels, category-only control scope, metric definitions, consistent styling, state-table formatting, all filter tests, unauthenticated public access, final screenshots, and native PDF export. No public-dashboard or dashboard-PDF completion claim is made yet.
 
 This file records the exact remaining build and acceptance work. The private workbook URL is supplied to its owner separately rather than published in this repository.
 
@@ -53,6 +57,7 @@ Use the metric expressions in metric-dictionary.md. Calculate ratios after aggre
 - Reconcile the unfiltered scorecards to evidence.json. Delivered merchandise value must equal BRL 13,181,027.13, delivered orders 96,211, on-time numerator 89,672, eligible denominator 96,203, review-score sum 397,204, and reviewed orders 95,568.
 - Test date-only, state-only, combined date/state, category-only, and empty selections. Verify the category selector does not change order scorecards.
 - Check small filtered groups against the 30-observation ranking rule.
+- Use [dashboard-filter-reference.json](dashboard-filter-reference.json), independently queried at order grain by [40_dashboard_filter_reference.sql](../sql/40_dashboard_filter_reference.sql), as the reference for seven date/state scenarios. These are expected values, not completed dashboard tests. The RR / February 2017 case has two eligible orders: retain them in overall totals, but suppress the performance ranking.
 - Verify text and chart labels are readable at normal zoom on all three pages.
 - Share only the report publicly as a viewer. Keep the workbook private. Verify the public report from an unauthenticated view.
 - Export the three-page PDF from the verified native report and inspect every page. Save screenshots of the verified dashboard, then add actual demo links and the PDF to the README and PR.
