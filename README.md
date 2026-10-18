@@ -63,7 +63,7 @@ See [data quality](docs/data-quality.json), [repeatability](docs/validation.json
 
 ## Reporting status
 
-The analysis and private Google Sheets sources have been built and verified. Native Looker Studio configuration, public-access validation, and dashboard PDF export are being completed. A verified dashboard URL and screenshots will be added after those checks pass.
+The analysis and private Google Sheets sources have been built and verified. Native Looker Studio configuration is blocked by a blank report editor after authorization refresh and a clean report attempt. Public-access validation, dashboard screenshots, and dashboard PDF export remain incomplete. The exact remaining work is recorded in [dashboard-build.md](docs/dashboard-build.md) and tracked in [issue #1](https://github.com/bulgogipedas/olist-ecommerce-analytics/issues/1).
 
 ## Source and attribution
 
