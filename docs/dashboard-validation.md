@@ -20,4 +20,12 @@ Monetary scorecards match the SQL reference to BRL 0.01; displayed order and sam
 
 The PDF was re-exported after widening the final-month chart margin and reducing the delivery-axis label size. The final artifact has complete charts and readable labels with no observed clipping. Static exports preserve the default cohort; use the live report for filters, hover values, and all state-table rows.
 
+## Layout revision
+
+The native report was revised on 19 October 2026 to reduce unused space inside the KPI cards. Card height decreased from 150 to 80 pixels, trends moved up 80 pixels, lower comparison charts grew from 250 to 270 pixels, and the footer decreased from 100 to 50 pixels. The canvas is now 1200 × 840 pixels, with Fit to width saved for public viewing. Metric definitions and source contracts are unchanged.
+
+After the layout changes, the combined SP / August 2018 selection was checked across all three pages: BRL 387,733.71, 3,164 orders, 90.99% on time, 6.20 days, 4.28 rating, 3,152 reviews, and 99.62% coverage. Selecting health_beauty for the full reporting window changes only the category chart to BRL 1,229,557.50; the order KPIs remain BRL 13,181,027.13, 96,211 orders, and BRL 137.00 AOV. The default cohort was restored afterward.
+
+All three screenshots were refreshed. A new All Pages PDF was exported from the public native report, rendered page by page, and visually inspected. All three pages measure 900 × 630 points; headline values and complete August 2018 labels were also checked in extracted text.
+
 The report is a historical descriptive analysis. It does not estimate causal delivery effects, allocate carrier/seller responsibility, or provide financial revenue recognition.

@@ -160,20 +160,76 @@
     "pages": 3,
     "page_size_points": [
       900.0,
-      675.12
+      630.0
     ],
-    "sha256": "a4f235ee79d95244bf583cb0b042f43df68aeb8f030847054584b785cab2440a",
-    "visual_review": "Every rendered page inspected; complete charts and readable labels; final-month and percentage-axis clipping repaired before final export"
+    "sha256": "3d96d9f726022e50f3a1cf54d5306df1bc31e41de341de96086b0baf62b8cc96",
+    "visual_review": "All three revised pages rendered and inspected; headline values and complete final-month labels checked in extracted text; no clipping observed",
+    "verified_at_utc": "2026-10-19T10:07:31.352427+00:00"
   },
   "screenshots": [
     "images/sales-overview.png",
     "images/delivery-performance.png",
-    "images/customer-experience.png"
+    "images/customer-experience.png",
+    "images/dashboard-context.png"
   ],
   "publication": "Manual publication; private source workbook identity and column contracts preserved",
   "limitations": [
     "Date-only August selection verified on Sales; combined SP/August and RJ/March selections verified across all three sources.",
     "Static PDF shows the default cohort; use the live report for interactive filters and all state-table rows.",
     "Historical associations do not establish causality."
-  ]
+  ],
+  "layout_revision": {
+    "status": "passed",
+    "verified_at_utc": "2026-10-19T10:07:31.352427+00:00",
+    "scope": "Presentation only; metric definitions and source contracts unchanged",
+    "geometry_pixels": {
+      "canvas_before": [
+        1200,
+        900
+      ],
+      "canvas_after": [
+        1200,
+        840
+      ],
+      "kpi_card_height_before": 150,
+      "kpi_card_height_after": 80,
+      "trend_shift_y": -80,
+      "comparison_height_before": 250,
+      "comparison_height_after": 270,
+      "footer_height_before": 100,
+      "footer_height_after": 50
+    },
+    "public_display_mode": "Fit to width",
+    "filter_smoke_checks": [
+      {
+        "case_id": "combined_sp_august_2018_after_layout",
+        "scope": "All three pages",
+        "status": "passed",
+        "observed": {
+          "merchandise_value_brl": "387733.71",
+          "delivered_orders": 3164,
+          "aov_brl": "122.55",
+          "on_time_rate_percent": "90.99",
+          "average_delivery_days": "6.20",
+          "eligible_delivery_orders": 3164,
+          "average_review_score": "4.28",
+          "review_coverage_percent": "99.62",
+          "reviewed_orders": 3152
+        }
+      },
+      {
+        "case_id": "health_beauty_whole_window_after_layout",
+        "scope": "Category chart only",
+        "status": "passed",
+        "category_merchandise_brl": "1229557.50",
+        "unchanged_order_kpis": {
+          "merchandise_value_brl": "13181027.13",
+          "delivered_orders": 96211,
+          "aov_brl": "137.00"
+        }
+      }
+    ],
+    "final_filter_state": "All states; 2017-01-01 through 2018-08-31; all categories",
+    "visual_qa": "All three revised native screenshots and all three PDF pages inspected"
+  }
 }
