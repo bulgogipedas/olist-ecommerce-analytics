@@ -1,5 +1,7 @@
 # Portfolio walkthrough
 
+Open the [verified public dashboard](https://lookerstudio.google.com/reporting/61137e61-5731-4947-b306-b6872ad2660f/page/dZYBG?hl=en). This script supports a 5–7 minute English demonstration, followed by the interview questions below.
+
 ## Opening: the business decision
 
 "I built this analysis for a commercial and operations manager who needs to understand sales concentration and delivery problems. I used public Olist data to connect delivered sales, delivery promises, and customer ratings. The reporting cohort is purchases from January 2017 through August 2018."
@@ -12,6 +14,7 @@
 
 1. Open Sales Overview. Explain BRL 13.18 million in delivered merchandise value, 96,211 delivered orders, and BRL 137.00 AOV. Show the monthly trajectory, product-category contribution, and state contribution.
 2. Change the date and state controls. Confirm that all relevant charts use the same selection. Explain that category selection applies only to category charts.
+   - Rehearsal example: select August 2018 and SP. Sales should show BRL 387,733.71 and 3,164 orders; Delivery should show 90.99% on time and 6.20 days; Customer Experience should show a 4.28 rating from 3,152 reviews. Reset the report before discussing the full-cohort findings.
 3. Open Delivery Performance. Explain 93.21% on-time delivery and the 96,203 eligible-order denominator. Compare Rio de Janeiro's 87.86% with São Paulo's 95.50%, showing the counts as well as the rates.
 4. Open Customer Experience. Compare 2.27 / 5 among reviewed late deliveries with 4.29 / 5 among reviewed on-time deliveries. Show review coverage and the rating distribution. State that this is an association.
 

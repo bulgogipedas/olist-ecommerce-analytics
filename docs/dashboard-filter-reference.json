@@ -1,5 +1,5 @@
 {
-  "status": "expected_results_only_dashboard_checks_pending",
+  "status": "sql_reference_values",
   "grain": "one order",
   "cases": [
     {
@@ -156,5 +156,6 @@
       "ranked_on_time_delivery_rate": 0.932112304190098,
       "ranked_average_review_score": 4.156244768123221
     }
-  ]
+  ],
+  "native_validation": "dashboard-validation.json"
 }

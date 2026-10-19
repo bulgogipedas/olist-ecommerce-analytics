@@ -4,6 +4,10 @@ A Data Analyst portfolio examining sales composition, delivery performance, and 
 
 **Business question:** Which products and regions contribute to sales, where does delivery performance fall short, and how do customer ratings differ by delivery experience?
 
+**[Open the public dashboard](https://lookerstudio.google.com/reporting/61137e61-5731-4947-b306-b6872ad2660f/page/dZYBG?hl=en)** · **[Download the native three-page PDF](docs/olist-dashboard.pdf)** · **[Read the case study](docs/case-study.md)** · **[English walkthrough](docs/walkthrough.md)**
+
+The report is public; the Google Sheets source workbook is private. Anonymous access was verified on all three pages. Use the report's date and customer-state controls to explore the historical cohort.
+
 ## Analysis results
 
 Purchases from January 2017 through August 2018, using final observed delivery status:
@@ -61,9 +65,19 @@ This command also creates `olist-dashboard-sources.xlsx`, ready for native Googl
 
 See [data quality](docs/data-quality.json), [repeatability](docs/validation.json), and [Sheets reconciliation](docs/sheets-validation.json). The [native source screenshot](docs/images/sheets-source.jpg) records the imported table formatting and dates.
 
-## Reporting status
+Native report checks cover the full cohort, state-only and date-only selections, two combined date/state selections, category-only scope, two-order samples, and empty selections. See [dashboard validation](docs/dashboard-validation.json) and the [validation readout](docs/dashboard-validation.md). The native PDF was rendered and visually checked on all three pages after repairing truncated axis labels.
 
-The analysis and private Google Sheets sources have been built and verified. The native Looker Studio editor is working, all three sources are connected, and the Sales Overview layout is saved. Delivery Performance is in progress. The report is not ready for publication: Customer Experience, final formatting, filter reconciliation, public-access validation, screenshots, and the native PDF export remain incomplete. The remaining work is recorded in [dashboard-build.md](docs/dashboard-build.md) and tracked in [issue #1](https://github.com/bulgogipedas/olist-ecommerce-analytics/issues/1).
+## Dashboard pages
+
+| Page | Decision supported | Screenshot |
+|---|---|---|
+| Sales Overview | Understand merchandise value, order value, and product/region concentration | [View](docs/images/sales-overview.png) |
+| Delivery Performance | Compare promise adherence with eligible and late-order counts | [View](docs/images/delivery-performance.png) |
+| Customer Experience | Compare review scores, coverage, and rating distributions | [View](docs/images/customer-experience.png) |
+
+![Sales Overview in the native report viewer](docs/images/sales-overview.png)
+
+The [build and maintenance guide](docs/dashboard-build.md) documents source contracts, calculated metrics, shared filter IDs, layout, and repeat publication. Version one uses manual, repeatable publication. Forecasting, ML, seller attribution, scheduled pipelines, and automated email are outside its scope.
 
 ## Source and attribution
 

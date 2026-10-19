@@ -1,5 +1,7 @@
 # Sales concentration and delivery experience at Olist
 
+[Explore the public dashboard](https://lookerstudio.google.com/reporting/61137e61-5731-4947-b306-b6872ad2660f/page/dZYBG?hl=en) or [open the native three-page PDF](olist-dashboard.pdf).
+
 ## Decision and population
 
 A commercial and operations manager needs to understand which products and regions contribute to sales, where delivery improvement deserves attention, and how review scores differ by delivery experience.

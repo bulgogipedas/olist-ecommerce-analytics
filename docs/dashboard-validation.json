@@ -1,0 +1,179 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-19T05:07:36.567734+00:00",
+  "report_url": "https://lookerstudio.google.com/reporting/61137e61-5731-4947-b306-b6872ad2660f/page/dZYBG?hl=en",
+  "method": "Native viewer readback compared with independently queried order-grain SQL references; source reconciliation and PDF render inspection",
+  "tolerances": {
+    "money_brl": "0.01",
+    "counts": "exact",
+    "ratios_and_means": "two displayed decimals"
+  },
+  "native_readback_records_verified": 19,
+  "filter_scenarios": [
+    {
+      "case_id": "combined_rj_march_2018",
+      "scope": "All three pages",
+      "status": "passed",
+      "observed_summary": "Displayed counts and values match the SQL reference at their documented display precision",
+      "sql_reference": {
+        "start_date": "2018-03-01",
+        "end_date": "2018-03-31",
+        "customer_state": "RJ",
+        "merchandise_value": "113062.84",
+        "delivered_orders": 864,
+        "eligible_delivery_orders": 864,
+        "reviewed_orders": 848
+      }
+    },
+    {
+      "case_id": "combined_sp_august_2018",
+      "scope": "All three pages",
+      "status": "passed",
+      "observed_summary": "Displayed counts and values match the SQL reference at their documented display precision",
+      "sql_reference": {
+        "start_date": "2018-08-01",
+        "end_date": "2018-08-31",
+        "customer_state": "SP",
+        "merchandise_value": "387733.71",
+        "delivered_orders": 3164,
+        "eligible_delivery_orders": 3164,
+        "reviewed_orders": 3152
+      }
+    },
+    {
+      "case_id": "date_august_2018",
+      "scope": "Sales Overview",
+      "status": "passed",
+      "observed_summary": "Displayed counts and values match the SQL reference at their documented display precision",
+      "sql_reference": {
+        "start_date": "2018-08-01",
+        "end_date": "2018-08-31",
+        "customer_state": null,
+        "merchandise_value": "838576.64",
+        "delivered_orders": 6351,
+        "eligible_delivery_orders": 6351,
+        "reviewed_orders": 6330
+      }
+    },
+    {
+      "case_id": "empty_january_2016",
+      "scope": "All three pages",
+      "status": "passed",
+      "observed_summary": "No data on all pages; no fabricated zero ratios",
+      "sql_reference": {
+        "start_date": "2016-01-01",
+        "end_date": "2016-01-31",
+        "customer_state": null,
+        "merchandise_value": "0.00",
+        "delivered_orders": 0,
+        "eligible_delivery_orders": 0,
+        "reviewed_orders": 0
+      }
+    },
+    {
+      "case_id": "small_group_rr_february_2017",
+      "scope": "All three pages",
+      "status": "passed",
+      "observed_summary": "Displayed counts and values match the SQL reference at their documented display precision",
+      "sql_reference": {
+        "start_date": "2017-02-01",
+        "end_date": "2017-02-28",
+        "customer_state": "RR",
+        "merchandise_value": "50.80",
+        "delivered_orders": 2,
+        "eligible_delivery_orders": 2,
+        "reviewed_orders": 2
+      }
+    },
+    {
+      "case_id": "state_sp",
+      "scope": "All three pages",
+      "status": "passed",
+      "observed_summary": "Displayed counts and values match the SQL reference at their documented display precision",
+      "sql_reference": {
+        "start_date": "2017-01-01",
+        "end_date": "2018-08-31",
+        "customer_state": "SP",
+        "merchandise_value": "5055587.13",
+        "delivered_orders": 40406,
+        "eligible_delivery_orders": 40399,
+        "reviewed_orders": 40178
+      }
+    },
+    {
+      "case_id": "whole_window",
+      "scope": "All three pages",
+      "status": "passed",
+      "observed_summary": "Displayed counts and values match the SQL reference at their documented display precision",
+      "sql_reference": {
+        "start_date": "2017-01-01",
+        "end_date": "2018-08-31",
+        "customer_state": null,
+        "merchandise_value": "13181027.13",
+        "delivered_orders": 96211,
+        "eligible_delivery_orders": 96203,
+        "reviewed_orders": 95568
+      }
+    }
+  ],
+  "category_control": {
+    "status": "passed",
+    "selection": "health_beauty in SP, August 2018",
+    "category_merchandise_brl": "49676.60",
+    "unchanged_order_kpis": {
+      "merchandise_value_brl": "387733.71",
+      "delivered_orders": 3164,
+      "aov_brl": "122.55"
+    }
+  },
+  "small_sample_rule": {
+    "status": "passed",
+    "minimum_n": 30,
+    "scenario": "RR, February 2017",
+    "orders_in_headlines": 2,
+    "reviewed_orders_in_headlines": 2,
+    "ranked_rate": null,
+    "outcome_average_rating": null
+  },
+  "public_access": {
+    "status": "passed",
+    "browser": "Separate unauthenticated browser; Google account display is empty",
+    "pages_verified": [
+      "Sales Overview",
+      "Delivery Performance",
+      "Customer Experience"
+    ],
+    "private_workbook": {
+      "shared": false,
+      "permissions": [
+        {
+          "type": "user",
+          "role": "owner"
+        }
+      ]
+    }
+  },
+  "native_pdf": {
+    "status": "passed",
+    "file": "olist-dashboard.pdf",
+    "export_method": "Native Download report (PDF), All Pages, English locale",
+    "pages": 3,
+    "page_size_points": [
+      900.0,
+      675.12
+    ],
+    "sha256": "b334d4e4fa57726b73457a7d0d2f0c10a30969c1a7b91501a8249ee65335e943",
+    "visual_review": "Every rendered page inspected; complete charts and readable labels; final-month and percentage-axis clipping repaired before final export"
+  },
+  "screenshots": [
+    "images/sales-overview.png",
+    "images/delivery-performance.png",
+    "images/customer-experience.png"
+  ],
+  "publication": "Manual publication; private source workbook identity and column contracts preserved",
+  "limitations": [
+    "Date-only August selection verified on Sales; combined SP/August and RJ/March selections verified across all three sources.",
+    "Static PDF shows the default cohort; use the live report for interactive filters and all state-table rows.",
+    "Historical associations do not establish causality."
+  ]
+}

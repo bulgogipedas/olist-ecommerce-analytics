@@ -2,13 +2,15 @@
 
 ## Current state
 
-The DuckDB analysis, validations, workbook packaging, and private native Google Sheets sources are complete. All source row counts and primary metric totals reconcile. The native editor now works, and all three Google Sheets sources are attached using owner's credentials. Shared purchase-date and customer-state ID overrides are saved across the sources. Report construction remains in progress.
+The [public native report](https://lookerstudio.google.com/reporting/61137e61-5731-4947-b306-b6872ad2660f/page/dZYBG?hl=en), [three-page native PDF](olist-dashboard.pdf), SQL analysis, validations, and private native Google Sheets sources are complete. Source row counts and primary metric totals reconcile. All three Google Sheets sources use owner's credentials; the workbook remains private. Shared purchase-date and customer-state ID overrides are saved across the sources.
 
-Sales Overview has a saved layout with three scorecards, a monthly merchandise trend, and state/category contribution bars. The unfiltered merchandise value and delivered-order count match the reference totals. The historical date control and customer-state dropdown are report-level components. Delivery Performance has a saved page with its KPI, monthly trend, state-rate comparison, and state-count table under construction. Customer Experience is still pending.
+All three native pages are authored. Sales Overview contains merchandise, orders, AOV, monthly trend, and state/category contribution charts. Delivery Performance contains on-time rate, duration, eligible counts, a monthly trend, guarded state-rate bars, and an eligible/late-order table. Customer Experience contains average rating, coverage, reviewed counts, a monthly trend, an outcome comparison with sample counts, and a five-rating distribution.
 
-Final validation must correct and verify percentage field types as well as display formats: a fraction of 0.932112 must display as 93.21%, not 0.93%. Other remaining work includes readable category labels, category-only control scope, metric definitions, consistent styling, state-table formatting, all filter tests, unauthenticated public access, final screenshots, and native PDF export. No public-dashboard or dashboard-PDF completion claim is made yet.
+Percentage data types and display formats are verified: the overall on-time rate displays as 93.21% and coverage as 99.33%. Category labels are readable, definitions and source attribution are present, and the category selector affects its grouped chart only. Native date/state readback for SP in August 2018 matches SQL across all three sources: BRL 387,733.71, 3,164 delivered orders, 90.99% on-time rate, 6.20 delivery days, 4.28 rating, and 99.62% review coverage.
 
-This file records the exact remaining build and acceptance work. The private workbook URL is supplied to its owner separately rather than published in this repository.
+Empty selections, the two-order RR / February 2017 sample, and a second combined RJ / March 2018 selection pass native checks. Public access was verified in a separate browser with no signed-in Google account, while Drive permission metadata shows only the workbook owner. The native PDF was re-exported after fixing axis-label truncation and every page was rendered and inspected. See [dashboard-validation.json](dashboard-validation.json) and the [validation readout](dashboard-validation.md).
+
+This file records the source setup and maintenance procedure. The private workbook URL is supplied to its owner separately rather than published in this repository.
 
 ## Source setup
 
@@ -22,9 +24,11 @@ Use one date-range control and one customer-state dropdown at report scope. Defa
 
 - Three pages named Sales Overview, Delivery Performance, and Customer Experience.
 - Fixed landscape canvas, 1200 × 900 pixels, with a white background and 40-pixel margins.
-- Arial, dark text #172B34, teal #0F766E for primary series, amber #D97706 and red #B4533B for late-delivery exceptions.
+- Public view uses Fit to width. Portfolio screenshots use the native fixed-canvas viewer for a complete page view.
+- Dark text on white, restrained teal primary series, and red/amber through green for the five-rating distribution.
 - Page title at top left, date/state controls at top right, summary metrics below, followed by trends and segment comparisons.
 - Display BRL explicitly, ratios as percentages with two decimals, ratings with two decimals, and count denominators as integers.
+- Trend axes use a valid 0–100% scale for delivery and 0–5 for ratings. Extra right plot margin preserves the final month label in the native PDF.
 
 ## Page 1: Sales Overview
 
@@ -57,7 +61,7 @@ Use the metric expressions in metric-dictionary.md. Calculate ratios after aggre
 - Reconcile the unfiltered scorecards to evidence.json. Delivered merchandise value must equal BRL 13,181,027.13, delivered orders 96,211, on-time numerator 89,672, eligible denominator 96,203, review-score sum 397,204, and reviewed orders 95,568.
 - Test date-only, state-only, combined date/state, category-only, and empty selections. Verify the category selector does not change order scorecards.
 - Check small filtered groups against the 30-observation ranking rule.
-- Use [dashboard-filter-reference.json](dashboard-filter-reference.json), independently queried at order grain by [40_dashboard_filter_reference.sql](../sql/40_dashboard_filter_reference.sql), as the reference for seven date/state scenarios. These are expected values, not completed dashboard tests. The RR / February 2017 case has two eligible orders: retain them in overall totals, but suppress the performance ranking.
+- Use [dashboard-filter-reference.json](dashboard-filter-reference.json), independently queried at order grain by [40_dashboard_filter_reference.sql](../sql/40_dashboard_filter_reference.sql), as the reference for seven date/state scenarios. The observed native checks and their scope are recorded separately in dashboard-validation.json. The RR / February 2017 case has two eligible orders: retain them in overall totals, but suppress the performance ranking.
 - Verify text and chart labels are readable at normal zoom on all three pages.
 - Share only the report publicly as a viewer. Keep the workbook private. Verify the public report from an unauthenticated view.
 - Export the three-page PDF from the verified native report and inspect every page. Save screenshots of the verified dashboard, then add actual demo links and the PDF to the README and PR.
