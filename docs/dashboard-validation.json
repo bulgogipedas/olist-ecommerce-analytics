@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "verified_at_utc": "2026-10-19T05:07:36.567734+00:00",
+  "verified_at_utc": "2026-10-19T05:09:23.715910+00:00",
   "report_url": "https://lookerstudio.google.com/reporting/61137e61-5731-4947-b306-b6872ad2660f/page/dZYBG?hl=en",
   "method": "Native viewer readback compared with independently queried order-grain SQL references; source reconciliation and PDF render inspection",
   "tolerances": {
@@ -162,7 +162,7 @@
       900.0,
       675.12
     ],
-    "sha256": "b334d4e4fa57726b73457a7d0d2f0c10a30969c1a7b91501a8249ee65335e943",
+    "sha256": "a4f235ee79d95244bf583cb0b042f43df68aeb8f030847054584b785cab2440a",
     "visual_review": "Every rendered page inspected; complete charts and readable labels; final-month and percentage-axis clipping repaired before final export"
   },
   "screenshots": [

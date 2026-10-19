@@ -18,6 +18,6 @@ Verified on 19 October 2026 against DuckDB results from the official Olist snaps
 
 Monetary scorecards match the SQL reference to BRL 0.01; displayed order and sample counts match exactly. Rates and means are compared at the displayed two-decimal precision. Category totals reconcile to overall merchandise value in both the DuckDB and Google Sheets validation layers.
 
-The PDF required a second export after widening the final-month chart margin and reducing the delivery-axis label size. The final artifact has complete charts and readable labels with no observed clipping. Static exports preserve the default cohort; use the live report for filters, hover values, and all state-table rows.
+The PDF was re-exported after widening the final-month chart margin and reducing the delivery-axis label size. The final artifact has complete charts and readable labels with no observed clipping. Static exports preserve the default cohort; use the live report for filters, hover values, and all state-table rows.
 
 The report is a historical descriptive analysis. It does not estimate causal delivery effects, allocate carrier/seller responsibility, or provide financial revenue recognition.
