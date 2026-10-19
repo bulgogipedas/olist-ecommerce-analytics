@@ -162,9 +162,9 @@
       900.0,
       630.0
     ],
-    "sha256": "3d96d9f726022e50f3a1cf54d5306df1bc31e41de341de96086b0baf62b8cc96",
-    "visual_review": "All three revised pages rendered and inspected; headline values and complete final-month labels checked in extracted text; no clipping observed",
-    "verified_at_utc": "2026-10-19T10:07:31.352427+00:00"
+    "sha256": "8eba5beeb4544dffe8e5aa1d41305c8a0cd377ac5439454e7aea3e2fee1cf2a1",
+    "visual_review": "All three pages rendered and inspected after header and KPI refinement; separate filter bounds, borderless scorecards, headline values, and complete final-month labels verified",
+    "verified_at_utc": "2026-10-19T10:16:14.385495+00:00"
   },
   "screenshots": [
     "images/sales-overview.png",
@@ -231,5 +231,34 @@
     ],
     "final_filter_state": "All states; 2017-01-01 through 2018-08-31; all categories",
     "visual_qa": "All three revised native screenshots and all three PDF pages inspected"
+  },
+  "header_kpi_refinement": {
+    "status": "passed",
+    "verified_at_utc": "2026-10-19T10:16:14.385495+00:00",
+    "scope": "Native layout and scorecard styling only",
+    "date_state_overlap_before_pixels": 19,
+    "date_state_gap_after_pixels": 25,
+    "filter_row_y_pixels": 75,
+    "filter_control_height_pixels": 50,
+    "title_box_height_pixels": 45,
+    "kpi_border_weight": "None",
+    "scorecards_updated": 9,
+    "date_picker_open_cancel": "passed",
+    "state_filter_check": {
+      "case_id": "state_sp_after_header_refinement",
+      "scope": "All three pages",
+      "status": "passed",
+      "merchandise_value_brl": "5055587.13",
+      "delivered_orders": 40406,
+      "aov_brl": "125.12",
+      "on_time_rate_percent": "95.50",
+      "average_delivery_days": "8.74",
+      "eligible_delivery_orders": 40399,
+      "average_review_score": "4.25",
+      "reviewed_orders": 40178,
+      "review_coverage_percent": "99.44"
+    },
+    "final_state": "Default reporting cohort restored; Fit to width saved",
+    "visual_review": "All three native screenshots and all three native PDF pages inspected"
   }
 }

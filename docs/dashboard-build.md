@@ -25,9 +25,10 @@ Use one date-range control and one customer-state dropdown at report scope. Defa
 - Three pages named Sales Overview, Delivery Performance, and Customer Experience.
 - Fixed landscape canvas, 1200 × 840 pixels, with a white background and 40-pixel margins.
 - Summary cards are 80 pixels high. Trends begin 80 pixels higher than the initial layout, lower comparisons are 270 pixels high, and the definition footer is 50 pixels high. This keeps the primary metrics compact and gives more space to comparisons.
+- KPI scorecards have no decorative border or shadow; labels and spacing group the values. Filter controls retain their visible input treatment to distinguish interaction from summary data.
 - Public view uses Fit to width. Portfolio screenshots use the native fixed-canvas viewer for a complete page view.
 - Dark text on white, restrained teal primary series, and red/amber through green for the five-rating distribution.
-- Page title at top left, date/state controls at top right, summary metrics below, followed by trends and segment comparisons.
+- Page title at top left in a 45-pixel-high text box. Filters share one row beneath the title: category on Sales at left, date/state at right. Date and state have a 25-pixel gap; summary metrics follow below, then trends and segment comparisons.
 - Display BRL explicitly, ratios as percentages with two decimals, ratings with two decimals, and count denominators as integers.
 - Trend axes use a valid 0–100% scale for delivery and 0–5 for ratings. Extra right plot margin preserves the final month label in the native PDF.
 

@@ -28,4 +28,10 @@ After the layout changes, the combined SP / August 2018 selection was checked ac
 
 All three screenshots were refreshed. A new All Pages PDF was exported from the public native report, rendered page by page, and visually inspected. All three pages measure 900 × 630 points; headline values and complete August 2018 labels were also checked in extracted text.
 
+## Header and KPI refinement
+
+A further visual inspection found that the original date and state control bounds overlapped by 19 pixels. Both report-level controls now share the filter row beneath the page title with a 25-pixel gap. Page-title text boxes were shortened to 45 pixels so they end before the filter row. All nine KPI scorecards now use Border weight = None; the visible boxes on filter controls indicate interactive inputs.
+
+The date picker opened and cancelled successfully. A new SP-only check across all three pages matched the SQL reference: BRL 5,055,587.13, 40,406 delivered orders, BRL 125.12 AOV, 95.50% on time, 8.74 delivery days, 40,399 eligible orders, 4.25 rating, 40,178 reviewed orders, and 99.44% coverage. The default cohort and Fit to width view were restored. The three native screenshots and PDF pages were refreshed and inspected again, including filter separation, headline values, and final-month labels.
+
 The report is a historical descriptive analysis. It does not estimate causal delivery effects, allocate carrier/seller responsibility, or provide financial revenue recognition.
