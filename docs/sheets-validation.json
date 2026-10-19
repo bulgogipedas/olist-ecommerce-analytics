@@ -1,0 +1,97 @@
+{
+  "published": "2026-10-19T15:35:11.454897+00:00",
+  "checks": [
+    {
+      "label": "Orders source rows",
+      "expected": 10631,
+      "observed": 10631,
+      "pass": true
+    },
+    {
+      "label": "Category source rows",
+      "expected": 55647,
+      "observed": 55647,
+      "pass": true
+    },
+    {
+      "label": "Experience source rows",
+      "expected": 13000,
+      "observed": 13000,
+      "pass": true
+    },
+    {
+      "label": "Delivered orders control",
+      "expected": 96211,
+      "observed": 96211,
+      "pass": true
+    },
+    {
+      "label": "Merchandise control BRL",
+      "expected": 13181027.13,
+      "observed": 13181027.13000042,
+      "pass": true
+    },
+    {
+      "label": "Category merchandise control BRL",
+      "expected": 13181027.13,
+      "observed": 13181027.130004752,
+      "pass": true
+    },
+    {
+      "label": "Eligible delivery orders control",
+      "expected": 96203,
+      "observed": 96203,
+      "pass": true
+    },
+    {
+      "label": "On-time orders control",
+      "expected": 89672,
+      "observed": 89672,
+      "pass": true
+    },
+    {
+      "label": "Reviewed orders control",
+      "expected": 95568,
+      "observed": 95568,
+      "pass": true
+    },
+    {
+      "label": "Review score total control",
+      "expected": 397204,
+      "observed": 397204,
+      "pass": true
+    },
+    {
+      "label": "Experience delivered orders control",
+      "expected": 96211,
+      "observed": 96211,
+      "pass": true
+    },
+    {
+      "label": "Monthly review source rows",
+      "expected": 540,
+      "observed": 540,
+      "pass": true
+    },
+    {
+      "label": "Monthly value control BRL",
+      "expected": 13181027.13,
+      "observed": 13181027.13,
+      "pass": true
+    },
+    {
+      "label": "Monthly orders control",
+      "expected": 96211,
+      "observed": 96211,
+      "pass": true
+    }
+  ],
+  "monthly_review": {
+    "rows": 540,
+    "columns": 7,
+    "readback_exact": true,
+    "header_types": "YYYY-MM text, State text; two numeric values; two integer counts; integer comparison flag",
+    "visual_qa": "passed",
+    "screenshot": "images/monthly-source.png"
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-19T15:35:11.454897+00:00",
+  "report_url": "https://lookerstudio.google.com/reporting/61137e61-5731-4947-b306-b6872ad2660f/page/dZYBG?hl=en",
+  "method": "Native viewer readback compared with independently queried order-grain SQL references; source reconciliation and PDF render inspection",
+  "tolerances": {
+    "money_brl": "0.01",
+    "counts": "exact",
+    "ratios_and_means": "two displayed decimals"
+  },
+  "native_readback_records_verified": 19,
+  "filter_scenarios": [
+    {
+      "case_id": "combined_rj_march_2018",
+      "scope": "All three pages",
+      "status": "passed",
+      "observed_summary": "Displayed counts and values match the SQL reference at their documented display precision",
+      "sql_reference": {
+        "start_date": "2018-03-01",
+        "end_date": "2018-03-31",
+        "customer_state": "RJ",
+        "merchandise_value": "113062.84",
+        "delivered_orders": 864,
+        "eligible_delivery_orders": 864,
+        "reviewed_orders": 848
+      }
+    },
+    {
+      "case_id": "combined_sp_august_2018",
+      "scope": "All three pages",
+      "status": "passed",
+      "observed_summary": "Displayed counts and values match the SQL reference at their documented display precision",
+      "sql_reference": {
+        "start_date": "2018-08-01",
+        "end_date": "2018-08-31",
+        "customer_state": "SP",
+        "merchandise_value": "387733.71",
+        "delivered_orders": 3164,
+        "eligible_delivery_orders": 3164,
+        "reviewed_orders": 3152
+      }
+    },
+    {
+      "case_id": "date_august_2018",
+      "scope": "Sales Overview",
+      "status": "passed",
+      "observed_summary": "Displayed counts and values match the SQL reference at their documented display precision",
+      "sql_reference": {
+        "start_date": "2018-08-01",
+        "end_date": "2018-08-31",
+        "customer_state": null,
+        "merchandise_value": "838576.64",
+        "delivered_orders": 6351,
+        "eligible_delivery_orders": 6351,
+        "reviewed_orders": 6330
+      }
+    },
+    {
+      "case_id": "empty_january_2016",
+      "scope": "All three pages",
+      "status": "passed",
+      "observed_summary": "No data on all pages; no fabricated zero ratios",
+      "sql_reference": {
+        "start_date": "2016-01-01",
+        "end_date": "2016-01-31",
+        "customer_state": null,
+        "merchandise_value": "0.00",
+        "delivered_orders": 0,
+        "eligible_delivery_orders": 0,
+        "reviewed_orders": 0
+      }
+    },
+    {
+      "case_id": "small_group_rr_february_2017",
+      "scope": "All three pages",
+      "status": "passed",
+      "observed_summary": "Displayed counts and values match the SQL reference at their documented display precision",
+      "sql_reference": {
+        "start_date": "2017-02-01",
+        "end_date": "2017-02-28",
+        "customer_state": "RR",
+        "merchandise_value": "50.80",
+        "delivered_orders": 2,
+        "eligible_delivery_orders": 2,
+        "reviewed_orders": 2
+      }
+    },
+    {
+      "case_id": "state_sp",
+      "scope": "All three pages",
+      "status": "passed",
+      "observed_summary": "Displayed counts and values match the SQL reference at their documented display precision",
+      "sql_reference": {
+        "start_date": "2017-01-01",
+        "end_date": "2018-08-31",
+        "customer_state": "SP",
+        "merchandise_value": "5055587.13",
+        "delivered_orders": 40406,
+        "eligible_delivery_orders": 40399,
+        "reviewed_orders": 40178
+      }
+    },
+    {
+      "case_id": "whole_window",
+      "scope": "All three pages",
+      "status": "passed",
+      "observed_summary": "Displayed counts and values match the SQL reference at their documented display precision",
+      "sql_reference": {
+        "start_date": "2017-01-01",
+        "end_date": "2018-08-31",
+        "customer_state": null,
+        "merchandise_value": "13181027.13",
+        "delivered_orders": 96211,
+        "eligible_delivery_orders": 96203,
+        "reviewed_orders": 95568
+      }
+    }
+  ],
+  "category_control": {
+    "status": "passed",
+    "selection": "health_beauty in SP, August 2018",
+    "category_merchandise_brl": "49676.60",
+    "unchanged_order_kpis": {
+      "merchandise_value_brl": "387733.71",
+      "delivered_orders": 3164,
+      "aov_brl": "122.55"
+    }
+  },
+  "small_sample_rule": {
+    "status": "passed",
+    "minimum_n": 30,
+    "scenario": "RR, February 2017",
+    "orders_in_headlines": 2,
+    "reviewed_orders_in_headlines": 2,
+    "ranked_rate": null,
+    "outcome_average_rating": null
+  },
+  "public_access": {
+    "status": "passed",
+    "browser": "Separate unauthenticated browser; Google account display is empty",
+    "pages_verified": [
+      "Sales Overview",
+      "Delivery Performance",
+      "Customer Experience"
+    ],
+    "private_workbook": {
+      "shared": false,
+      "permissions": [
+        {
+          "type": "user",
+          "role": "owner"
+        }
+      ]
+    }
+  },
+  "native_pdf": {
+    "status": "passed",
+    "file": "olist-dashboard.pdf",
+    "export_method": "Native Download report (PDF), All Pages, English locale",
+    "pages": 3,
+    "page_sizes_points": [
+      [
+        900.0,
+        824.88
+      ],
+      [
+        900.0,
+        630.0
+      ],
+      [
+        900.0,
+        630.0
+      ]
+    ],
+    "sha256": "4e0c7b0cea66b59e617bc374fc731cad1f3ad157f5a9d15d4da4380e3b02e780",
+    "visual_review": "All three final pages rendered and inspected, including header-control detail, complete charts, KPI values, final-month labels, table headers, and footer definitions",
+    "verified_at_utc": "2026-10-19T15:35:11.454897+00:00"
+  },
+  "screenshots": [
+    "images/sales-overview.png",
+    "images/delivery-performance.png",
+    "images/customer-experience.png",
+    "images/dashboard-context.png"
+  ],
+  "publication": "Manual publication; same private workbook and existing three source contracts preserved; monthly_review added as a fourth analytical source",
+  "limitations": [
+    "Monthly review uses its own Month selector and shared State; global Date intentionally applies only to daily charts.",
+    "The static PDF shows the default cohort and first five rows of paginated tables; use the live report for filters and remaining rows.",
+    "Historical final-status cohort and descriptive associations do not establish causality."
+  ],
+  "layout_revision": {
+    "status": "passed",
+    "verified_at_utc": "2026-10-19T10:07:31.352427+00:00",
+    "scope": "Presentation only; metric definitions and source contracts unchanged",
+    "geometry_pixels": {
+      "canvas_before": [
+        1200,
+        900
+      ],
+      "canvas_after": [
+        1200,
+        840
+      ],
+      "kpi_card_height_before": 150,
+      "kpi_card_height_after": 80,
+      "trend_shift_y": -80,
+      "comparison_height_before": 250,
+      "comparison_height_after": 270,
+      "footer_height_before": 100,
+      "footer_height_after": 50
+    },
+    "public_display_mode": "Fit to width",
+    "filter_smoke_checks": [
+      {
+        "case_id": "combined_sp_august_2018_after_layout",
+        "scope": "All three pages",
+        "status": "passed",
+        "observed": {
+          "merchandise_value_brl": "387733.71",
+          "delivered_orders": 3164,
+          "aov_brl": "122.55",
+          "on_time_rate_percent": "90.99",
+          "average_delivery_days": "6.20",
+          "eligible_delivery_orders": 3164,
+          "average_review_score": "4.28",
+          "review_coverage_percent": "99.62",
+          "reviewed_orders": 3152
+        }
+      },
+      {
+        "case_id": "health_beauty_whole_window_after_layout",
+        "scope": "Category chart only",
+        "status": "passed",
+        "category_merchandise_brl": "1229557.50",
+        "unchanged_order_kpis": {
+          "merchandise_value_brl": "13181027.13",
+          "delivered_orders": 96211,
+          "aov_brl": "137.00"
+        }
+      }
+    ],
+    "final_filter_state": "All states; 2017-01-01 through 2018-08-31; all categories",
+    "visual_qa": "All three revised native screenshots and all three PDF pages inspected"
+  },
+  "header_kpi_refinement": {
+    "status": "passed",
+    "verified_at_utc": "2026-10-19T10:16:14.385495+00:00",
+    "scope": "Native layout and scorecard styling only",
+    "date_state_overlap_before_pixels": 19,
+    "date_state_gap_after_pixels": 25,
+    "filter_row_y_pixels": 75,
+    "filter_control_height_pixels": 50,
+    "title_box_height_pixels": 45,
+    "kpi_border_weight": "None",
+    "scorecards_updated": 9,
+    "date_picker_open_cancel": "passed",
+    "state_filter_check": {
+      "case_id": "state_sp_after_header_refinement",
+      "scope": "All three pages",
+      "status": "passed",
+      "merchandise_value_brl": "5055587.13",
+      "delivered_orders": 40406,
+      "aov_brl": "125.12",
+      "on_time_rate_percent": "95.50",
+      "average_delivery_days": "8.74",
+      "eligible_delivery_orders": 40399,
+      "average_review_score": "4.25",
+      "reviewed_orders": 40178,
+      "review_coverage_percent": "99.44"
+    },
+    "final_state": "Default reporting cohort restored; Fit to width saved",
+    "visual_review": "All three native screenshots and all three native PDF pages inspected"
+  },
+  "manager_upgrade": {
+    "status": "passed",
+    "verified_at_utc": "2026-10-19T15:35:11.454897+00:00",
+    "analytical_sources": 4,
+    "monthly_rows": 540,
+    "native_checks": [
+      {
+        "case": "state_sp",
+        "scope": "State applies to all four sources",
+        "observed": "Sales 5055587.13 / 40406 / 125.12; review 4.25 / low-rating share 10.67% / coverage 99.44%; monthly August value 387733.71"
+      },
+      {
+        "case": "sp_august_2018",
+        "scope": "All three pages and monthly section",
+        "observed": "Sales 387733.71 / 3164 / 122.55; delivery 90.99% / 6.20 / 285 late; review 4.28 / 10.06% low-rating / 99.62% coverage"
+      },
+      {
+        "case": "sp_august_monthly",
+        "scope": "Monthly current/prior components",
+        "observed": "387733.71 / 3164 / 122.55; MoMs +20.55% / +16.54% / +3.44%"
+      },
+      {
+        "case": "category_health_beauty_sp_august",
+        "scope": "Category group only",
+        "observed": "12.81% before category selection; selected category rebases to 100%; order KPIs and monthly section unchanged"
+      },
+      {
+        "case": "month_selector",
+        "scope": "Monthly group only",
+        "observed": "Selecting August changes only monthly rows; main sales KPIs unchanged"
+      },
+      {
+        "case": "january_2017_monthly",
+        "scope": "No prior reporting month",
+        "observed": "111798.36 / 750 / 149.06; all three MoMs show dashes"
+      },
+      {
+        "case": "rr_february_2017",
+        "scope": "All three pages; n=2",
+        "observed": "50.80 / 2 / 25.40; 100.00% on time / 9.30 days / 0 late; 4.00 / 0.00% low-rating / 100.00% coverage; comparative rates, outcome ratings, shares and distributions unavailable"
+      },
+      {
+        "case": "zero_order_month_rr_august",
+        "scope": "Monthly ratio guard",
+        "observed": "0 value and orders, -100% changes against a positive prior baseline; AOV and AOV MoM unavailable. Missing-data display changed from literal null to dash."
+      },
+      {
+        "case": "empty_january_2016",
+        "scope": "Main charts on all three pages",
+        "observed": "All nine headline scorecards show No data; no zero rate fabricated. Monthly review intentionally retains January 2017 selection."
+      },
+      {
+        "case": "public_access",
+        "scope": "Unauthenticated browser",
+        "observed": "All three pages reproduce default headline values, including 6531 late orders and 12.80% low-rating share"
+      },
+      {
+        "case": "layout",
+        "scope": "All three pages and native PDF",
+        "observed": "Date/State separated; equal-width tables; sample counts visible; labels fit; empty header overlays removed; definitions linked; default cohort and Fit to width restored"
+      }
+    ],
+    "baseline": "Fixed observed 93.2112304190098% full-cohort on-time rate; not a target; gap in percentage points; n>=30",
+    "source_hashes": "Existing three daily marts unchanged; new monthly mart repeatable",
+    "source_visual_qa": "monthly-source.png inspected: 7 complete headers, native text months, currency precision, integer counts, frozen header/keys",
+    "screenshots": "Final native viewer captures inspected at authored dimensions; Customer header recaptured after rendering completed",
+    "report_level_layer": "Bottom; empty page-header overlays removed; date picker opened and cancelled after save"
+  }
+}

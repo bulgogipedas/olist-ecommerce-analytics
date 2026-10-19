@@ -1,0 +1,51 @@
+{
+  "checks": {
+    "category_sales_reconcile": true,
+    "customer_join_coverage": true,
+    "delivered_orders_have_items": true,
+    "delivery_partition_reconciles": true,
+    "experience_orders_reconcile": true,
+    "experience_reviews_reconcile": true,
+    "item_join_coverage": true,
+    "merchandise_not_multiplied": true,
+    "monthly_review_orders_reconcile": true,
+    "monthly_review_prior_components_reconcile": true,
+    "monthly_review_sales_reconcile": true,
+    "monthly_review_unique_grain": true,
+    "nonnegative_durations": true,
+    "one_row_per_order": true,
+    "order_count_preserved": true,
+    "payments_not_multiplied": true,
+    "required_purchase_dates": true,
+    "review_histogram_reconciles": true,
+    "unique_customers": true,
+    "unique_item_keys": true,
+    "unique_orders": true,
+    "unique_payment_keys": true,
+    "unique_products": true,
+    "unique_translations": true,
+    "valid_item_money": true,
+    "valid_payment_money": true,
+    "valid_review_range": true
+  },
+  "delivered_excluded_from_delivery": 8,
+  "delivered_without_review": 643,
+  "invalid_review_scores": 0,
+  "multiple_review_orders": 547,
+  "report_orders": 99092,
+  "source_purchase_coverage": {
+    "first_purchase": "2016-09-04T21:15:19",
+    "last_purchase": "2018-10-17T17:30:18"
+  },
+  "source_rows": {
+    "customers": 99441,
+    "items": 112650,
+    "orders": 99441,
+    "payments": 103886,
+    "products": 32951,
+    "reviews": 99224,
+    "translations": 71
+  },
+  "superseded_reviews": 551,
+  "unknown_category_items": 1557
+}
