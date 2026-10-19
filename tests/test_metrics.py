@@ -74,3 +74,30 @@ def test_negative_delivery_interval_is_excluded(con):
     con.execute("UPDATE raw_orders SET order_delivered_customer_date='2017-12-31' WHERE order_id='a'")
     run_models(con)
     assert con.execute("SELECT valid_delivery,delivery_days FROM order_model WHERE order_id='a'").fetchone() == (False, None)
+
+
+def test_monthly_review_retains_prior_orders_for_a_state_with_no_current_orders(con):
+    con.execute("""
+        INSERT INTO raw_customers VALUES ('rj','RJ');
+        UPDATE raw_orders SET customer_id='rj' WHERE order_id='b';
+        INSERT INTO raw_orders VALUES
+          ('e','c','delivered','2018-02-01','2018-02-05','2018-02-06'),
+          ('before','c','canceled','2016-12-31',NULL,NULL),
+          ('after','c','canceled','2018-09-01',NULL,NULL);
+        INSERT INTO raw_items VALUES ('e','1','p','s','40.00','4.00');
+    """)
+    run_models(con)
+    assert con.execute("SELECT merchandise_value,delivered_orders,previous_merchandise_value,previous_delivered_orders,comparison_available FROM monthly_review WHERE review_month='2018-02' AND customer_state='RJ'").fetchone() == (0, 0, 20, 1, 1)
+    assert con.execute("SELECT SUM(merchandise_value),SUM(delivered_orders),SUM(previous_merchandise_value),SUM(previous_delivered_orders) FROM monthly_review WHERE review_month='2018-02'").fetchone() == (40, 1, 200, 3)
+
+
+def test_monthly_comparison_requires_covered_prior_calendar_month(con):
+    assert con.execute("SELECT MAX(comparison_available) FROM monthly_review").fetchone()[0] == 0
+    con.execute("INSERT INTO raw_orders VALUES ('before','c','canceled','2016-12-31',NULL,NULL),('after','c','canceled','2018-09-01',NULL,NULL)")
+    run_models(con)
+    assert con.execute("SELECT MIN(comparison_available),MAX(comparison_available) FROM monthly_review WHERE review_month='2017-01'").fetchone() == (0, 0)
+    assert con.execute("SELECT MIN(comparison_available),MAX(comparison_available) FROM monthly_review WHERE review_month='2018-02'").fetchone() == (1, 1)
+
+
+def test_monthly_aov_change_does_not_invent_values_for_zero_order_months(con):
+    assert con.execute("SELECT (SUM(merchandise_value)/NULLIF(SUM(delivered_orders),0)) / NULLIF(SUM(previous_merchandise_value)/NULLIF(SUM(previous_delivered_orders),0),0)-1 FROM monthly_review WHERE review_month='2018-02'").fetchone()[0] is None

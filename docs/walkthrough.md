@@ -12,11 +12,11 @@ Open the [verified public dashboard](https://lookerstudio.google.com/reporting/6
 
 ## Demonstrate the dashboard
 
-1. Open Sales Overview. Explain BRL 13.18 million in delivered merchandise value, 96,211 delivered orders, and BRL 137.00 AOV. Show the monthly trajectory, product-category contribution, and state contribution.
+1. Open Sales Overview. Explain BRL 13.18 million in delivered merchandise value, 96,211 delivered orders, and BRL 137.00 AOV. Show the monthly trajectory and percentage shares by category and state. Scroll to Monthly review: August value fell 3.38% while orders grew 3.12% and AOV fell 6.31%. Month filters only this section; State applies to it, while Date controls the main charts.
 2. Change the date and state controls. Confirm that all relevant charts use the same selection. Explain that category selection applies only to category charts.
-   - Rehearsal example: select August 2018 and SP. Sales should show BRL 387,733.71 and 3,164 orders; Delivery should show 90.99% on time and 6.20 days; Customer Experience should show a 4.28 rating from 3,152 reviews. Reset the report before discussing the full-cohort findings.
-3. Open Delivery Performance. Explain 93.21% on-time delivery and the 96,203 eligible-order denominator. Compare Rio de Janeiro's 87.86% with São Paulo's 95.50%, showing the counts as well as the rates.
-4. Open Customer Experience. Compare 2.27 / 5 among reviewed late deliveries with 4.29 / 5 among reviewed on-time deliveries. Show review coverage and the rating distribution. State that this is an association.
+   - Rehearsal example: select August 2018 and SP. Sales should show BRL 387,733.71 and 3,164 orders; Delivery should show 90.99% on time and 6.20 days; Customer Experience should show a 4.28 rating from 3,152 reviews and a 10.06% low-rating share. Reset the report before discussing the full-cohort findings.
+3. Open Delivery Performance. Explain 93.21% on-time delivery and the 96,203 eligible-order denominator. Compare Rio de Janeiro's 87.86% with São Paulo's 95.50%, showing counts as well as rates. The lowest-rate ranking and largest-late-volume table answer different questions. Explain that the gap column uses a fixed observed baseline, not an invented target.
+4. Open Customer Experience. Compare 2.27 / 5 among reviewed late deliveries with 4.29 / 5 among reviewed on-time deliveries. Show 12.80% overall low-rating share, review coverage, and the rating distribution. Low ratings are 62.40% among reviewed late deliveries versus 9.25% among on-time reviews. Comparisons require 30 reviews; small counts still remain in totals. State that this is an association.
 
 ## Show the SQL and validation
 
@@ -51,3 +51,7 @@ This analysis does not establish causality. Product category, region, time, or c
 **What would you do with internal company access?**
 
 Add inventory, cost, carrier, dispatch, and support-interaction data. Investigate operational causes, define business-owned targets, and measure a delivery or communication intervention against a comparable baseline.
+
+**Why use a separate Month selector?**
+
+A free-form date selection can include partial months. Monthly review compares complete purchase calendar months using additive current and prior components. State remains shared, while the main date picker intentionally does not alter that section. January has no prior reporting month, and zero baselines are unavailable rather than fabricated growth.

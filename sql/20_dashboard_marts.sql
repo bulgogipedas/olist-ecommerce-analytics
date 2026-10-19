@@ -42,3 +42,37 @@ SELECT purchase_date, customer_state, delivery_outcome,
 FROM report_orders WHERE is_delivered
 GROUP BY purchase_date, customer_state, delivery_outcome
 ORDER BY purchase_date, customer_state, delivery_outcome;
+
+-- Calendar-month review has its own month selector. Keep prior-month components
+-- additive so state selections recompute changes from sums, including states
+-- with no current-month orders. Do not sum or average precomputed growth rates.
+CREATE OR REPLACE TABLE monthly_review AS
+WITH months AS (
+    SELECT month_start::DATE AS month_start
+    FROM GENERATE_SERIES(DATE '2017-01-01', DATE '2018-08-01', INTERVAL '1 month') t(month_start)
+), states AS (
+    SELECT DISTINCT customer_state FROM report_orders
+), source_bounds AS (
+    SELECT MIN(purchase_at)::DATE AS first_purchase,
+           MAX(purchase_at)::DATE AS last_purchase FROM stg_orders
+), monthly AS (
+    SELECT DATE_TRUNC('month', purchase_date)::DATE AS month_start,
+           customer_state, SUM(merchandise_value) AS merchandise_value,
+           SUM(delivered_orders)::BIGINT AS delivered_orders
+    FROM orders_daily GROUP BY month_start, customer_state
+)
+SELECT STRFTIME(m.month_start, '%Y-%m') AS review_month, s.customer_state,
+       COALESCE(cur.merchandise_value, 0)::DECIMAL(18,2) AS merchandise_value,
+       COALESCE(cur.delivered_orders, 0)::BIGINT AS delivered_orders,
+       COALESCE(prev.merchandise_value, 0)::DECIMAL(18,2) AS previous_merchandise_value,
+       COALESCE(prev.delivered_orders, 0)::BIGINT AS previous_delivered_orders,
+       CASE WHEN m.month_start > DATE '2017-01-01'
+                  AND b.first_purchase <= (m.month_start - INTERVAL '1 month')::DATE
+                  AND b.last_purchase >= LAST_DAY(m.month_start)
+            THEN 1 ELSE 0 END::INTEGER AS comparison_available
+FROM months m CROSS JOIN states s CROSS JOIN source_bounds b
+LEFT JOIN monthly cur ON cur.month_start = m.month_start
+                     AND cur.customer_state = s.customer_state
+LEFT JOIN monthly prev ON prev.month_start = (m.month_start - INTERVAL '1 month')::DATE
+                      AND prev.customer_state = s.customer_state
+ORDER BY review_month, customer_state;

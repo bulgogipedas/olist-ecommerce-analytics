@@ -1,10 +1,11 @@
 {
-  "full_data_checks": 23,
-  "regression_tests": 8,
+  "full_data_checks": 27,
+  "regression_tests": 11,
   "repeat_build_identical": true,
   "mart_sha256": {
     "categories_daily": "fe4f067113d4f720670cd0098b62c1a7477031719c358cec74ce61eaa7b59b8c",
     "experience_daily": "d1350872603c57ad4d0b1a951aa197b099e3ce42ee45d0f79177ab417efcb55a",
+    "monthly_review": "2bf13262338cc3b9df1f53a134f9754166595ff1ffa2b59f787ad4b19bc64c59",
     "orders_daily": "1607bf16952776c3e1482ed173fd45d439f993ce80d90388ae1190a3381d454d"
   }
 }

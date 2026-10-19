@@ -1,5 +1,5 @@
 {
-  "published": "2026-10-18 15:51:17 UTC",
+  "published": "2026-10-19T15:35:11.454897+00:00",
   "checks": [
     {
       "label": "Orders source rows",
@@ -66,6 +66,32 @@
       "expected": 96211,
       "observed": 96211,
       "pass": true
+    },
+    {
+      "label": "Monthly review source rows",
+      "expected": 540,
+      "observed": 540,
+      "pass": true
+    },
+    {
+      "label": "Monthly value control BRL",
+      "expected": 13181027.13,
+      "observed": 13181027.13,
+      "pass": true
+    },
+    {
+      "label": "Monthly orders control",
+      "expected": 96211,
+      "observed": 96211,
+      "pass": true
     }
-  ]
+  ],
+  "monthly_review": {
+    "rows": 540,
+    "columns": 7,
+    "readback_exact": true,
+    "header_types": "YYYY-MM text, State text; two numeric values; two integer counts; integer comparison flag",
+    "visual_qa": "passed",
+    "screenshot": "images/monthly-source.png"
+  }
 }

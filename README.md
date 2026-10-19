@@ -6,7 +6,7 @@ A Data Analyst portfolio examining sales composition, delivery performance, and 
 
 **[Open the public dashboard](https://lookerstudio.google.com/reporting/61137e61-5731-4947-b306-b6872ad2660f/page/dZYBG?hl=en)** · **[Download the native three-page PDF](docs/olist-dashboard.pdf)** · **[Read the case study](docs/case-study.md)** · **[English walkthrough](docs/walkthrough.md)**
 
-The report is public; the Google Sheets source workbook is private. Anonymous access was verified on all three pages. Use the report's date and customer-state controls to explore the historical cohort.
+The report is public; the Google Sheets source workbook is private. Anonymous access was verified on all three pages. Use Date and State for the main charts. Sales also has a separate Month selector for full-calendar-month comparisons; State applies there too.
 
 ## Analysis results
 
@@ -43,7 +43,7 @@ uv run pytest -q
 
 The fetch command downloads the official public archive and extracts seven named CSVs. An existing complete archive at `../olist-work/olist.zip` is reused. If the source requires sign-in in your environment, download the archive from Kaggle and place it there.
 
-The build creates a local DuckDB database and exports three source CSVs, `workbook-data.json`, the aggregate evidence, quality results, and a SHA-256 manifest under the working directory's `build` folder. Repeated builds replace tables rather than appending orders.
+The build creates a local DuckDB database and exports four source CSVs, `workbook-data.json`, the aggregate evidence, quality results, and a SHA-256 manifest under the working directory's `build` folder. Repeated builds replace tables rather than appending orders.
 
 ### Package the publishing workbook
 
@@ -58,8 +58,8 @@ This command also creates `olist-dashboard-sources.xlsx`, ready for native Googl
 
 ## Validation
 
-- **8 regression tests** cover multi-item/multi-payment joins, latest reviews, missing dates, the estimated-date boundary, unknown categories, zero denominators, negative delivery intervals, and repeat builds.
-- **23 full-data assertions** verify source-key uniqueness, join coverage, preserved monetary totals, category reconciliation, review counts, and delivery partitions.
+- **11 regression tests** cover multi-item/multi-payment joins, latest reviews, missing dates, the estimated-date boundary, unknown categories, zero denominators, negative delivery intervals, repeat builds, missing monthly state rows, unavailable prior periods, and zero-order AOV.
+- **27 full-data assertions** verify source-key uniqueness, join coverage, preserved monetary totals, category reconciliation, review counts, delivery partitions, and current/prior-month components.
 - Repeated full-data builds produced identical CSV hashes.
 - Native Google Sheets readback reconciled all source row counts and headline numerator/denominator totals. Currency sums agree within BRL 0.01.
 
@@ -71,9 +71,9 @@ Native report checks cover the full cohort, state-only and date-only selections,
 
 | Page | Decision supported | Screenshot |
 |---|---|---|
-| Sales Overview | Understand merchandise value, order value, and product/region concentration | [View](docs/images/sales-overview.png) |
-| Delivery Performance | Compare promise adherence with eligible and late-order counts | [View](docs/images/delivery-performance.png) |
-| Customer Experience | Compare review scores, coverage, and rating distributions | [View](docs/images/customer-experience.png) |
+| Sales Overview | Understand sales concentration and calendar-month changes in value, orders, and AOV | [View](docs/images/sales-overview.png) |
+| Delivery Performance | Prioritize low on-time rates and high late-order volumes, with sample counts | [View](docs/images/delivery-performance.png) |
+| Customer Experience | Compare ratings, 1–2-star share, coverage, and guarded distributions | [View](docs/images/customer-experience.png) |
 
 ![Sales Overview in the native report viewer](docs/images/sales-overview.png)
 

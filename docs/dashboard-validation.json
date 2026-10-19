@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "verified_at_utc": "2026-10-19T05:09:23.715910+00:00",
+  "verified_at_utc": "2026-10-19T15:35:11.454897+00:00",
   "report_url": "https://lookerstudio.google.com/reporting/61137e61-5731-4947-b306-b6872ad2660f/page/dZYBG?hl=en",
   "method": "Native viewer readback compared with independently queried order-grain SQL references; source reconciliation and PDF render inspection",
   "tolerances": {
@@ -158,13 +158,23 @@
     "file": "olist-dashboard.pdf",
     "export_method": "Native Download report (PDF), All Pages, English locale",
     "pages": 3,
-    "page_size_points": [
-      900.0,
-      630.0
+    "page_sizes_points": [
+      [
+        900.0,
+        824.88
+      ],
+      [
+        900.0,
+        630.0
+      ],
+      [
+        900.0,
+        630.0
+      ]
     ],
-    "sha256": "8eba5beeb4544dffe8e5aa1d41305c8a0cd377ac5439454e7aea3e2fee1cf2a1",
-    "visual_review": "All three pages rendered and inspected after header and KPI refinement; separate filter bounds, borderless scorecards, headline values, and complete final-month labels verified",
-    "verified_at_utc": "2026-10-19T10:16:14.385495+00:00"
+    "sha256": "4e0c7b0cea66b59e617bc374fc731cad1f3ad157f5a9d15d4da4380e3b02e780",
+    "visual_review": "All three final pages rendered and inspected, including header-control detail, complete charts, KPI values, final-month labels, table headers, and footer definitions",
+    "verified_at_utc": "2026-10-19T15:35:11.454897+00:00"
   },
   "screenshots": [
     "images/sales-overview.png",
@@ -172,11 +182,11 @@
     "images/customer-experience.png",
     "images/dashboard-context.png"
   ],
-  "publication": "Manual publication; private source workbook identity and column contracts preserved",
+  "publication": "Manual publication; same private workbook and existing three source contracts preserved; monthly_review added as a fourth analytical source",
   "limitations": [
-    "Date-only August selection verified on Sales; combined SP/August and RJ/March selections verified across all three sources.",
-    "Static PDF shows the default cohort; use the live report for interactive filters and all state-table rows.",
-    "Historical associations do not establish causality."
+    "Monthly review uses its own Month selector and shared State; global Date intentionally applies only to daily charts.",
+    "The static PDF shows the default cohort and first five rows of paginated tables; use the live report for filters and remaining rows.",
+    "Historical final-status cohort and descriptive associations do not establish causality."
   ],
   "layout_revision": {
     "status": "passed",
@@ -260,5 +270,73 @@
     },
     "final_state": "Default reporting cohort restored; Fit to width saved",
     "visual_review": "All three native screenshots and all three native PDF pages inspected"
+  },
+  "manager_upgrade": {
+    "status": "passed",
+    "verified_at_utc": "2026-10-19T15:35:11.454897+00:00",
+    "analytical_sources": 4,
+    "monthly_rows": 540,
+    "native_checks": [
+      {
+        "case": "state_sp",
+        "scope": "State applies to all four sources",
+        "observed": "Sales 5055587.13 / 40406 / 125.12; review 4.25 / low-rating share 10.67% / coverage 99.44%; monthly August value 387733.71"
+      },
+      {
+        "case": "sp_august_2018",
+        "scope": "All three pages and monthly section",
+        "observed": "Sales 387733.71 / 3164 / 122.55; delivery 90.99% / 6.20 / 285 late; review 4.28 / 10.06% low-rating / 99.62% coverage"
+      },
+      {
+        "case": "sp_august_monthly",
+        "scope": "Monthly current/prior components",
+        "observed": "387733.71 / 3164 / 122.55; MoMs +20.55% / +16.54% / +3.44%"
+      },
+      {
+        "case": "category_health_beauty_sp_august",
+        "scope": "Category group only",
+        "observed": "12.81% before category selection; selected category rebases to 100%; order KPIs and monthly section unchanged"
+      },
+      {
+        "case": "month_selector",
+        "scope": "Monthly group only",
+        "observed": "Selecting August changes only monthly rows; main sales KPIs unchanged"
+      },
+      {
+        "case": "january_2017_monthly",
+        "scope": "No prior reporting month",
+        "observed": "111798.36 / 750 / 149.06; all three MoMs show dashes"
+      },
+      {
+        "case": "rr_february_2017",
+        "scope": "All three pages; n=2",
+        "observed": "50.80 / 2 / 25.40; 100.00% on time / 9.30 days / 0 late; 4.00 / 0.00% low-rating / 100.00% coverage; comparative rates, outcome ratings, shares and distributions unavailable"
+      },
+      {
+        "case": "zero_order_month_rr_august",
+        "scope": "Monthly ratio guard",
+        "observed": "0 value and orders, -100% changes against a positive prior baseline; AOV and AOV MoM unavailable. Missing-data display changed from literal null to dash."
+      },
+      {
+        "case": "empty_january_2016",
+        "scope": "Main charts on all three pages",
+        "observed": "All nine headline scorecards show No data; no zero rate fabricated. Monthly review intentionally retains January 2017 selection."
+      },
+      {
+        "case": "public_access",
+        "scope": "Unauthenticated browser",
+        "observed": "All three pages reproduce default headline values, including 6531 late orders and 12.80% low-rating share"
+      },
+      {
+        "case": "layout",
+        "scope": "All three pages and native PDF",
+        "observed": "Date/State separated; equal-width tables; sample counts visible; labels fit; empty header overlays removed; definitions linked; default cohort and Fit to width restored"
+      }
+    ],
+    "baseline": "Fixed observed 93.2112304190098% full-cohort on-time rate; not a target; gap in percentage points; n>=30",
+    "source_hashes": "Existing three daily marts unchanged; new monthly mart repeatable",
+    "source_visual_qa": "monthly-source.png inspected: 7 complete headers, native text months, currency precision, integer counts, frozen header/keys",
+    "screenshots": "Final native viewer captures inspected at authored dimensions; Customer header recaptured after rendering completed",
+    "report_level_layer": "Bottom; empty page-header overlays removed; date picker opened and cancelled after save"
   }
 }

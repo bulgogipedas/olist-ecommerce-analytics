@@ -28,7 +28,7 @@ FILES = {
     "reviews": "olist_order_reviews_dataset.csv",
     "translations": "product_category_name_translation.csv",
 }
-MARTS = ["orders_daily", "categories_daily", "experience_daily"]
+MARTS = ["orders_daily", "categories_daily", "experience_daily", "monthly_review"]
 
 
 def json_value(value):
@@ -86,6 +86,10 @@ def validate(con):
     check("delivery_partition_reconciles", "SELECT SUM(on_time_orders+late_orders) = SUM(eligible_delivery_orders) FROM orders_daily")
     check("nonnegative_durations", "SELECT COUNT(*) = 0 FROM order_model WHERE delivery_days < 0")
     check("valid_review_range", "SELECT COUNT(*) = 0 FROM order_model WHERE is_reviewed AND review_score NOT BETWEEN 1 AND 5")
+    check("monthly_review_unique_grain", "SELECT COUNT(*) = COUNT(DISTINCT (review_month,customer_state)) FROM monthly_review")
+    check("monthly_review_sales_reconcile", "SELECT (SELECT SUM(merchandise_value) FROM monthly_review) = (SELECT SUM(merchandise_value) FROM orders_daily)")
+    check("monthly_review_orders_reconcile", "SELECT (SELECT SUM(delivered_orders) FROM monthly_review) = (SELECT SUM(delivered_orders) FROM orders_daily)")
+    check("monthly_review_prior_components_reconcile", "SELECT (SELECT SUM(previous_merchandise_value) FROM monthly_review) = (SELECT SUM(merchandise_value) FROM orders_daily WHERE purchase_date < DATE '2018-08-01') AND (SELECT SUM(previous_delivered_orders) FROM monthly_review) = (SELECT SUM(delivered_orders) FROM orders_daily WHERE purchase_date < DATE '2018-08-01')")
     return checks
 
 
@@ -135,6 +139,19 @@ def evidence(con):
                SUM(rating_3_count) AS rating_3_count, SUM(rating_4_count) AS rating_4_count,
                SUM(rating_5_count) AS rating_5_count
         FROM experience_daily GROUP BY delivery_outcome ORDER BY delivery_outcome""")
+    result["monthly_review"] = records(con, """
+        SELECT review_month, SUM(merchandise_value) AS merchandise_value_brl,
+               SUM(delivered_orders) AS delivered_orders,
+               SUM(merchandise_value)/NULLIF(SUM(delivered_orders),0) AS aov_brl,
+               CASE WHEN MIN(comparison_available)=1 THEN
+                   SUM(merchandise_value)/NULLIF(SUM(previous_merchandise_value),0)-1 END AS merchandise_mom,
+               CASE WHEN MIN(comparison_available)=1 THEN
+                   SUM(delivered_orders)::DOUBLE/NULLIF(SUM(previous_delivered_orders),0)-1 END AS orders_mom,
+               CASE WHEN MIN(comparison_available)=1 THEN
+                   (SUM(merchandise_value)/NULLIF(SUM(delivered_orders),0)) /
+                   NULLIF(SUM(previous_merchandise_value)/NULLIF(SUM(previous_delivered_orders),0),0)-1 END AS aov_mom,
+               MIN(comparison_available) AS comparison_available
+        FROM monthly_review GROUP BY review_month ORDER BY review_month""")
     return result
 
 
@@ -184,6 +201,7 @@ def build(work_dir: Path, export_xlsx: bool = False):
         ["Reviews", "One latest review per order; only scores 1 to 5 on delivered orders. Display review coverage."],
         ["Review association", "Delivery outcomes and review scores are associated; the comparison is not causal."],
         ["Small groups", "Rank only groups with at least 30 eligible delivery orders or 30 reviewed orders."],
+        ["Monthly review", "Separate calendar-month selector; state filtering applies. Changes use summed current/prior month components. January has no prior reporting month; zero or unavailable baselines stay unavailable."],
         ["Delivery exclusions", str(audit["delivered_excluded_from_delivery"])],
         ["Unreviewed delivered orders", str(audit["delivered_without_review"])],
         ["Unknown-category item rows", str(audit["unknown_category_items"])],

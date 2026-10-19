@@ -1,6 +1,6 @@
 {
-  "built_at": "2026-10-18T15:43:47.700412+00:00",
-  "checks_passed": 23,
+  "built_at": "2026-10-19T15:17:05.902916+00:00",
+  "checks_passed": 27,
   "input_sha256": {
     "olist_customers_dataset.csv": "983a422239e1712ded753b3bf9ecf47dc73f144d306029dcfa99e70a226883d2",
     "olist_order_items_dataset.csv": "0bc4d068c4fe38cbb01bd90e8746e3c613fe7b4baef75fab7b0e329701c3e279",
@@ -13,11 +13,13 @@
   "mart_rows": {
     "categories_daily": 55647,
     "experience_daily": 13000,
+    "monthly_review": 540,
     "orders_daily": 10631
   },
   "mart_sha256": {
     "categories_daily": "fe4f067113d4f720670cd0098b62c1a7477031719c358cec74ce61eaa7b59b8c",
     "experience_daily": "d1350872603c57ad4d0b1a951aa197b099e3ce42ee45d0f79177ab417efcb55a",
+    "monthly_review": "2bf13262338cc3b9df1f53a134f9754166595ff1ffa2b59f787ad4b19bc64c59",
     "orders_daily": "1607bf16952776c3e1482ed173fd45d439f993ce80d90388ae1190a3381d454d"
   },
   "report_end": "2018-08-31",

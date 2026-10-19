@@ -19,6 +19,7 @@ This analysis covers purchases from 1 January 2017 through 31 August 2018 in Oli
 | Average delivery duration | 12.54 days | Eligible delivered orders, elapsed time |
 | Average review score | 4.16 / 5 | 95,568 reviewed delivered orders |
 | Review coverage | 99.33% | Reviewed / all delivered orders |
+| 1–2-star review share | 12.80% | Reviewed delivered orders |
 
 ### 1. Sales have meaningful product and geographic concentration
 
@@ -42,6 +43,12 @@ Among reviewed delivered orders, late deliveries average 2.27 / 5 across 6,378 r
 
 **Action:** Investigate low ratings among late deliveries and test proactive delay communication and customer recovery. Monitor rating distribution and review coverage alongside delivery performance. This descriptive comparison does not estimate the causal effect of delivery speed; category, region, timing, and other factors may also influence reviews.
 
+### 4. August value fell while order volume grew
+
+August 2018 delivered merchandise value was BRL 838,576.64, down 3.38% from July. Delivered orders increased 3.12% to 6,351, while AOV fell 6.31% to BRL 132.04. The divergence points to lower value per delivered order in this final-status purchase cohort; it does not identify a pricing or product-mix cause.
+
+**Action:** Have the commercial team review basket value and product/category mix, then obtain promotion and price-history evidence before changing discounts. Use the monthly section's prior-calendar-month components and selected states, keeping the main date picker independent to avoid partial-month comparisons.
+
 ## Measurement and data quality
 
 - The original source contains 99,441 orders, 112,650 items, 103,886 payment records, and 99,224 reviews.
@@ -51,7 +58,7 @@ Among reviewed delivered orders, late deliveries average 2.27 / 5 across 6,378 r
 - Eight delivered orders lack valid delivery dates. They remain in sales and review totals, and are excluded from delivery-rate and duration denominators.
 - There are 643 delivered orders without a selected valid review. Review coverage is displayed instead of assuming those orders received a neutral score.
 - There are 1,557 delivered item rows with missing or untranslated categories. They remain under Unknown and in overall sales totals.
-- Twenty-three build assertions verify uniqueness, join coverage, monetary reconciliation, review counts, and delivery partitions. Synthetic regression tests cover the specific join and date-boundary risks.
+- Twenty-seven build assertions verify uniqueness, join coverage, monetary reconciliation, review counts, and delivery partitions. Synthetic regression tests cover the specific join and date-boundary risks.
 
 ## Limits and next evidence
 
@@ -59,7 +66,7 @@ The data describes this Olist snapshot and period, not today's Brazilian e-comme
 
 Payment totals are not substituted for merchandise value. The delivered-order payment total is BRL 15,375,875.44, while merchandise plus freight is BRL 15,373,120.01. These fields have distinct source meanings, and the difference is retained rather than forced to reconcile.
 
-The source does not provide the costs, inventory, ad spend, or controlled experiments needed to estimate margin, ROAS, stock availability, or causal delivery effects. Rankings require at least 30 eligible observations. Actual-versus-target assessments are omitted because the source does not supply business targets.
+The source does not provide the costs, inventory, ad spend, or controlled experiments needed to estimate margin, ROAS, stock availability, or causal delivery effects. Rankings require at least 30 eligible observations. The delivery table compares against the fixed observed 93.21% full-period baseline. It is not a target. Actual-versus-target assessments are omitted because the source does not supply business targets.
 
 ## Source and reproduction
 

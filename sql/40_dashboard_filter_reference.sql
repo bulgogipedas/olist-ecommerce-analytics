@@ -21,7 +21,8 @@ WITH cases(case_id, start_date, end_date, customer_state) AS (
            COUNT(o.order_id) FILTER (WHERE o.delivery_outcome = 'Late') AS late_orders,
            COALESCE(SUM(o.delivery_days), 0) AS delivery_days_sum,
            COUNT(o.order_id) FILTER (WHERE o.is_reviewed) AS reviewed_orders,
-           COALESCE(SUM(o.review_score) FILTER (WHERE o.is_reviewed), 0) AS review_score_sum
+           COALESCE(SUM(o.review_score) FILTER (WHERE o.is_reviewed), 0) AS review_score_sum,
+           COUNT(o.order_id) FILTER (WHERE o.is_reviewed AND o.review_score IN (1, 2)) AS low_rating_orders
     FROM cases c
     LEFT JOIN report_orders o
         ON o.purchase_date BETWEEN c.start_date AND c.end_date
@@ -34,6 +35,7 @@ SELECT *,
        delivery_days_sum / NULLIF(eligible_delivery_orders, 0) AS average_delivery_days,
        review_score_sum::DOUBLE / NULLIF(reviewed_orders, 0) AS average_review_score,
        reviewed_orders::DOUBLE / NULLIF(delivered_orders, 0) AS review_coverage,
+       low_rating_orders::DOUBLE / NULLIF(reviewed_orders, 0) AS low_rating_share,
        CASE WHEN eligible_delivery_orders >= 30
             THEN on_time_orders::DOUBLE / eligible_delivery_orders
        END AS ranked_on_time_delivery_rate,

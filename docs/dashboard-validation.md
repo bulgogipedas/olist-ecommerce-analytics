@@ -35,3 +35,15 @@ A further visual inspection found that the original date and state control bound
 The date picker opened and cancelled successfully. A new SP-only check across all three pages matched the SQL reference: BRL 5,055,587.13, 40,406 delivered orders, BRL 125.12 AOV, 95.50% on time, 8.74 delivery days, 40,399 eligible orders, 4.25 rating, 40,178 reviewed orders, and 99.44% coverage. The default cohort and Fit to width view were restored. The three native screenshots and PDF pages were refreshed and inspected again, including filter separation, headline values, and final-month labels.
 
 The report is a historical descriptive analysis. It does not estimate causal delivery effects, allocate carrier/seller responsibility, or provide financial revenue recognition.
+
+## Manager decision revision
+
+Four additive sources now support the three report pages. The new monthly_review source contains 540 month/state rows and reconciles exactly to BRL 13,181,027.13 and 96,211 delivered orders. Its complete Google Sheets readback matches the local export. All 11 regression tests and 27 full-data checks pass; all four CSV hashes match across repeated builds. The original three daily tables retain their previous hashes.
+
+The monthly section has its own Month selector. State applies across all four sources; Date applies to the daily sources. Native checks verify that Month selection leaves headline sales KPIs unchanged, Date can show no main-chart data while monthly review retains its selected month, and January MoMs are unavailable. The SP/August monthly comparison shows +20.55% value, +16.54% orders and +3.44% AOV against July. The all-state August comparison shows −3.38%, +3.12% and −6.31% respectively. Zero-order AOV remains unavailable.
+
+Delivery now prioritizes the lowest guarded state rates and largest late-order counts. The fixed 93.21% historical baseline is identified as an observed reference, not a target. Customer Experience shows 12.80% overall 1–2-star share; its outcome table and all five distribution metrics suppress comparisons below 30 reviews while preserving counts. SP/August reads 10.06% low-rating share; RR/February still retains two orders/reviews and a 0.00% headline low-rating share, while comparative metrics are unavailable.
+
+The final layout preserves compact borderless KPI cards, separates filter controls, adds readable contribution percentages and category labels, and uses equal-width paginated tables. Empty header text boxes were removed. Definitions link to the metric dictionary. The final native screenshots, monthly worksheet, all three rendered PDF pages, and a header-control detail were inspected. Sales is 1200 × 1100 pixels; Delivery and Customer remain 1200 × 840. The PDF pages are 900 × 824.88, 900 × 630, and 900 × 630 points. Fit to width and the default cohort are restored.
+
+All three pages remain anonymously accessible; the workbook still has shared=false and a single owner permission. The final PDF is an unmodified native All Pages export. See manager_upgrade in the machine-readable validation record for the scope of each new check.

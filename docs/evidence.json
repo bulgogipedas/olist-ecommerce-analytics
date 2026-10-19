@@ -631,6 +631,208 @@
       "review_score": 4.310268562401264
     }
   ],
+  "monthly_review": [
+    {
+      "aov_brl": 149.06448,
+      "aov_mom": null,
+      "comparison_available": 0,
+      "delivered_orders": 750,
+      "merchandise_mom": null,
+      "merchandise_value_brl": 111798.36,
+      "orders_mom": null,
+      "review_month": "2017-01"
+    },
+    {
+      "aov_brl": 141.69594676346037,
+      "aov_mom": -0.04943185148158458,
+      "comparison_available": 1,
+      "delivered_orders": 1653,
+      "merchandise_mom": 1.0950521993345879,
+      "merchandise_value_brl": 234223.4,
+      "orders_mom": 1.2040000000000002,
+      "review_month": "2017-02"
+    },
+    {
+      "aov_brl": 141.0836017282011,
+      "aov_mom": -0.004321542353511898,
+      "comparison_available": 1,
+      "delivered_orders": 2546,
+      "merchandise_mom": 0.5335737163750505,
+      "merchandise_value_brl": 359198.85,
+      "orders_mom": 0.5402298850574712,
+      "review_month": "2017-03"
+    },
+    {
+      "aov_brl": 147.9243074250977,
+      "aov_mom": 0.04848689438816067,
+      "comparison_available": 1,
+      "delivered_orders": 2303,
+      "merchandise_mom": -0.051584714149279676,
+      "merchandise_value_brl": 340669.68,
+      "orders_mom": -0.09544383346425767,
+      "review_month": "2017-04"
+    },
+    {
+      "aov_brl": 137.99725042301185,
+      "aov_mom": -0.06710903146943903,
+      "comparison_available": 1,
+      "delivered_orders": 3546,
+      "merchandise_mom": 0.4364009441638599,
+      "merchandise_value_brl": 489338.25,
+      "orders_mom": 0.5397307859313938,
+      "review_month": "2017-05"
+    },
+    {
+      "aov_brl": 134.58480701754385,
+      "aov_mom": -0.024728343463421343,
+      "comparison_available": 1,
+      "delivered_orders": 3135,
+      "merchandise_mom": -0.13776744409414143,
+      "merchandise_value_brl": 421923.37,
+      "orders_mom": -0.11590524534686975,
+      "review_month": "2017-06"
+    },
+    {
+      "aov_brl": 124.3813326446281,
+      "aov_mom": -0.07581445929172137,
+      "comparison_available": 1,
+      "delivered_orders": 3872,
+      "merchandise_mom": 0.14145021168180372,
+      "merchandise_value_brl": 481604.52,
+      "orders_mom": 0.23508771929824568,
+      "review_month": "2017-07"
+    },
+    {
+      "aov_brl": 132.29184354877174,
+      "aov_mom": 0.06359885953903444,
+      "comparison_available": 1,
+      "delivered_orders": 4193,
+      "merchandise_mom": 0.15177428152044747,
+      "merchandise_value_brl": 554699.7,
+      "orders_mom": 0.08290289256198347,
+      "review_month": "2017-08"
+    },
+    {
+      "aov_brl": 146.36136626506024,
+      "aov_mom": 0.1063521554985476,
+      "comparison_available": 1,
+      "delivered_orders": 4150,
+      "merchandise_mom": 0.09500630701621082,
+      "merchandise_value_brl": 607399.67,
+      "orders_mom": -0.010255187216789863,
+      "review_month": "2017-09"
+    },
+    {
+      "aov_brl": 144.76276239392587,
+      "aov_mom": -0.010922307654871899,
+      "comparison_available": 1,
+      "delivered_orders": 4478,
+      "merchandise_mom": 0.06725057983650196,
+      "merchandise_value_brl": 648247.65,
+      "orders_mom": 0.0790361445783132,
+      "review_month": "2017-10"
+    },
+    {
+      "aov_brl": 135.51452462614898,
+      "aov_mom": -0.06388547451595838,
+      "comparison_available": 1,
+      "delivered_orders": 7289,
+      "merchandise_mom": 0.5237469352954847,
+      "merchandise_value_brl": 987765.37,
+      "orders_mom": 0.6277355962483251,
+      "review_month": "2017-11"
+    },
+    {
+      "aov_brl": 131.69475603119898,
+      "aov_mom": -0.02818715267228955,
+      "comparison_available": 1,
+      "delivered_orders": 5513,
+      "merchandise_mom": -0.2649740393308181,
+      "merchandise_value_brl": 726033.19,
+      "orders_mom": -0.24365482233502533,
+      "review_month": "2017-12"
+    },
+    {
+      "aov_brl": 130.80280096194653,
+      "aov_mom": -0.006772897388876542,
+      "comparison_available": 1,
+      "delivered_orders": 7069,
+      "merchandise_mom": 0.27355748020279913,
+      "merchandise_value_brl": 924645.0,
+      "orders_mom": 0.2822419735171413,
+      "review_month": "2018-01"
+    },
+    {
+      "aov_brl": 126.0773653699466,
+      "aov_mom": -0.03612640981116799,
+      "comparison_available": 1,
+      "delivered_orders": 6555,
+      "merchandise_mom": -0.10621143249571452,
+      "merchandise_value_brl": 826437.13,
+      "orders_mom": -0.07271184043004664,
+      "review_month": "2018-02"
+    },
+    {
+      "aov_brl": 136.13540625446237,
+      "aov_mom": 0.07977673752146264,
+      "comparison_available": 1,
+      "delivered_orders": 7003,
+      "merchandise_mom": 0.15357383567701022,
+      "merchandise_value_brl": 953356.25,
+      "orders_mom": 0.0683447749809305,
+      "review_month": "2018-03"
+    },
+    {
+      "aov_brl": 143.2088982053545,
+      "aov_mom": 0.051959237831710414,
+      "comparison_available": 1,
+      "delivered_orders": 6798,
+      "merchandise_mom": 0.021165057658141917,
+      "merchandise_value_brl": 973534.09,
+      "orders_mom": -0.029273168642010572,
+      "review_month": "2018-04"
+    },
+    {
+      "aov_brl": 144.8428937620388,
+      "aov_mom": 0.011409874506130402,
+      "comparison_available": 1,
+      "delivered_orders": 6749,
+      "merchandise_mom": 0.004119629750202192,
+      "merchandise_value_brl": 977544.69,
+      "orders_mom": -0.0072080023536333915,
+      "review_month": "2018-05"
+    },
+    {
+      "aov_brl": 140.36364322020003,
+      "aov_mom": -0.03092488989620512,
+      "comparison_available": 1,
+      "delivered_orders": 6099,
+      "merchandise_mom": -0.1242570608204111,
+      "merchandise_value_brl": 856077.86,
+      "orders_mom": -0.09631056452807818,
+      "review_month": "2018-06"
+    },
+    {
+      "aov_brl": 140.9244130540672,
+      "aov_mom": 0.003995121678249891,
+      "comparison_available": 1,
+      "delivered_orders": 6159,
+      "merchandise_mom": 0.013872102708041067,
+      "merchandise_value_brl": 867953.46,
+      "orders_mom": 0.009837678307919262,
+      "review_month": "2018-07"
+    },
+    {
+      "aov_brl": 132.03851991812314,
+      "aov_mom": -0.06305432070548977,
+      "comparison_available": 1,
+      "delivered_orders": 6351,
+      "merchandise_mom": -0.03384607741525669,
+      "merchandise_value_brl": 838576.64,
+      "orders_mom": 0.03117389186556263,
+      "review_month": "2018-08"
+    }
+  ],
   "states": [
     {
       "customer_state": "SP",
